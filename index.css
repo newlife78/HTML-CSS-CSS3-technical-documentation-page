@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* for Safari */
+  -moz-box-sizing: border-box; /* for Firefox */
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 15px;
+}
+
+/* CSS used to define grid layout */
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "header header"
+    "navbar content"
+    "navbar footer";
+}
+
+.header {
+  background-color: #000;
+  color: #fff;
+  grid-area: header;
+}
+
+#navbar {
+  background-color: #e1e1e1;
+  color: #fff;
+  grid-area: navbar;
+}
+
+#main-doc {
+  background-color: #f5f5f5;
+  color: #000;
+  grid-area: content;
+  padding: 15px 55px;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 0.75rem;
+}
+
+/* CSS used for each element in the grid */
+.header {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+#header-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  padding: 1px;
+}
+
+#header-img {
+  width: 7.5vw;
+  height: 2.5vw;
+}
+
+#navbar-title {
+  background-color: #808080;
+  position: fixed;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-right: 3px solid rgb(152, 152, 152);
+  padding-left: 20px;
+  font-size: 1.25rem;
+}
+
+#navbar > ul {
+  position: fixed;
+  margin-top: 50px;
+  width: 350px;
+  height: 88%;
+  overflow: auto;
+  border-right: 3px solid rgb(152, 152, 152);
+}
+
+#navbar > ul > li {
+  display: flex;
+  height: 50px;
+  list-style-type: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 0.95rem;
+}
+
+#navbar > ul > li:first-child {
+  border-top: none;
+}
+
+#navbar > ul > li:hover {
+  background-color: #c0c0c0;
+}
+
+#navbar a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #000;
+  margin-left: 40px;
+}
+
+.main-section {
+  padding: 55px 15px;
+}
+
+.main-section header {
+  font-size: 2.25rem;
+  margin-bottom: 40px;
+}
+
+.main-section p {
+  text-align: justify;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  word-wrap: break-word;
+  margin: 20px 0px;
+}
+
+.main-section li {
+  text-align: justify;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  margin: 20px 0px 20px 60px;
+}
+
+code {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  word-wrap: break-word;
+  background-color: #e1e1e1;
+  margin: 0px;
+  padding: 15px;
+  color: #659ec7;
+}
+
+#code_li {
+  margin-left: 60px;
+  list-style-type: none;
+}
+
+.main-section .external-link {
+  color: #0000e5;
+}
+
+.main-section .external-link:hover {
+  color: #0a5d00;
+}
+
+.main-section #em_text {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+#navbar-footer li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+#navbar-footer li:last-child {
+  padding-right: 0;
+}
+
+#navbar-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#navbar-footer .nav-link:hover {
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+#navbar-footer a:hover {
+  color: #000;
+}
+
+#copyright-notes {
+  padding: 5px 0px;
+  font-style: italic;
+}
+
+/* CSS used for each element inside <code> tag */
+code #built-in-function {
+  font-style: normal;
+  color: #6960ec;
+}
+
+code #new-function {
+  font-style: normal;
+  color: #f28500;
+}
+
+code #init-function {
+  font-style: normal;
+  color: #c947f5;
+}
+
+code #keyword {
+  font-style: normal;
+  color: #e24c00;
+}
+
+code #argument {
+  font-style: normal;
+  color: #495e35;
+}
+
+code #key-argument {
+  font-style: normal;
+  color: #dd1f13;
+}
+
+code #variable-value {
+  font-style: normal;
+  color: #4682b4;
+}
+
+code #self-operator {
+  font-style: normal;
+  color: #800080;
+}
+
+code #comments {
+  font-style: normal;
+  color: #7e7e7e;
+}
+
+/* media queries*/
+@media (max-width: 768px) {
+  /* CSS used to define grid layout */
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 200px 1fr 40px;
+    grid-template-areas:
+      "header"
+      "navbar"
+      "content"
+      "footer";
+  }
+
+  #main-doc {
+    padding: 15px;
+    overflow: auto;
+  }
+
+  .footer {
+    padding: 3px 10px;
+    font-size: 0.55rem;
+  }
+
+  /* CSS used for each element in the grid */
+  .header {
+    height: 40px;
+    padding: 5px 10px;
+  }
+
+  #header-img {
+    width: 12vw;
+    height: 4vw;
+  }
+
+  #navbar-title {
+    width: 100%;
+    height: 40px;
+    border-right: none;
+    padding-left: 15px;
+    font-size: 1.1rem;
+  }
+
+  #navbar > ul {
+    margin-top: 40px;
+    width: 100%;
+    height: 160px;
+    border-right: none;
+    border-bottom: 3px solid rgb(152, 152, 152);
+  }
+
+  #navbar > ul > li {
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  #navbar a {
+    margin-left: 25px;
+  }
+
+  .main-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-section header {
+    font-size: 2.1rem;
+    margin: 15px 0px;
+  }
+
+  .main-section p {
+    font-size: 0.8rem;
+    margin: 20px 0px;
+  }
+
+  .main-section li {
+    font-size: 0.8rem;
+    margin: 15px 0px 15px 40px;
+  }
+
+  code {
+    font-size: 0.7rem;
+    padding: 15px;
+    overflow: auto;
+  }
+
+  #code_li {
+    margin-left: 40px;
+    overflow: auto;
+  }
+
+  #copyright-notes {
+    padding: 3px 0px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* CSS used to define grid layout */
+  .grid-container {
+    grid-template-columns: 275px 1fr;
+  }
+
+  #main-doc {
+    padding: 15px;
+    overflow: auto;
+  }
+
+  .footer {
+    padding: 5px 10px;
+    font-size: 0.65rem;
+  }
+
+  /* CSS used for each element in the grid */
+  #navbar-title {
+    width: 275px;
+    font-size: 1.15rem;
+  }
+
+  #navbar > ul {
+    width: 275px;
+  }
+
+  #navbar > ul > li {
+    font-size: 0.85rem;
+  }
+
+  .main-section {
+    padding: 10px;
+  }
+
+  .main-section header {
+    font-size: 2.15rem;
+    margin: 20px 0px;
+  }
+
+  .main-section p {
+    font-size: 0.85rem;
+    margin: 20px 0px;
+  }
+
+  .main-section li {
+    font-size: 0.85rem;
+    margin: 15px 0px 15px 40px;
+  }
+
+  code {
+    font-size: 0.8rem;
+    padding: 15px;
+    overflow: auto;
+  }
+
+  #code_li {
+    margin-left: 40px;
+    overflow: auto;
+  }
+}

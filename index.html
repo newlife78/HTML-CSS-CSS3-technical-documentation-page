@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+            <div id="header-logo">
+                <img id="header-img"
+                    src="https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png"
+                    alt="Python original logo" />
+            </div>
+        </header>
+
+        <nav id="navbar">
+            <header id="navbar-title">Python Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#what_can_we_do_with_python">What can we do with Python</a></li>
+                <li><a class="nav-link" href="#how_python_code_gets_executed">How Python code gets executed</a></li>
+                <li><a class="nav-link" href="#how_does_python_interact_with_other_pl">How does Python interact with other
+                        PL</a></li>
+                <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+                <li><a class="nav-link" href="#variables">Variables</a></li>
+                <li><a class="nav-link" href="#type_of_variables">Type of Variables</a></li>
+                <li><a class="nav-link" href="#type_conversion">Type Conversion</a></li>
+                <li><a class="nav-link" href="#receiving_inputs">Receiving inputs</a></li>
+                <li><a class="nav-link" href="#strings">Strings</a></li>
+                <li><a class="nav-link" href="#formatted_strings">Formatted Strings</a></li>
+                <li><a class="nav-link" href="#string_methods">String Methods</a></li>
+                <li><a class="nav-link" href="#arithmetic_operations">Arithmetic operations</a></li>
+                <li><a class="nav-link" href="#math_functions">Math Functions</a></li>
+                <li><a class="nav-link" href="#if_else_statement">if... else statement</a></li>
+                <li><a class="nav-link" href="#logical_operators">Logical operators</a></li>
+                <li><a class="nav-link" href="#comparison_operators">Comparison operators</a></li>
+                <li><a class="nav-link" href="#while_loops">While loops</a></li>
+                <li><a class="nav-link" href="#for_loops">For loops</a></li>
+                <li><a class="nav-link" href="#nested_loops">Nested Loops</a></li>
+                <li><a class="nav-link" href="#lists">Lists</a></li>
+                <li><a class="nav-link" href="#2d_lists">2D Lists</a></li>
+                <li><a class="nav-link" href="#list_methods">List Methods</a></li>
+                <li><a class="nav-link" href="#tuples">Tuples</a></li>
+                <li><a class="nav-link" href="#unpacking">Unpacking</a></li>
+                <li><a class="nav-link" href="#dictionaries">Dictionaries</a></li>
+                <li><a class="nav-link" href="#functions">Functions</a></li>
+                <li><a class="nav-link" href="#parameters">Parameters</a></li>
+                <li><a class="nav-link" href="#keyword_arguments">Keyword Arguments</a></li>
+                <li><a class="nav-link" href="#return_statement">Return Statement</a></li>
+                <li><a class="nav-link" href="#reusable_functions">Reusable Functions</a></li>
+                <li><a class="nav-link" href="#exception_handling">Exception Handling</a></li>
+                <li><a class="nav-link" href="#comments">Comments</a></li>
+                <li><a class="nav-link" href="#classes">Classes</a></li>
+                <li><a class="nav-link" href="#constructors">Constructors</a></li>
+                <li><a class="nav-link" href="#inheritance">Inheritance</a></li>
+                <li><a class="nav-link" href="#modules">Modules</a></li>
+                <li><a class="nav-link" href="#packages">Packages</a></li>
+                <li><a class="nav-link" href="#standard_libraries_for_Python">Standard libraries for Python</a></li>
+                <li><a class="nav-link" href="#directories_and_files">Directories and Files</a></li>
+                <li><a class="nav-link" href="#pypi_and_pip">Pypi and Pip</a></li>
+                <li><a class="nav-link" href="#reference">Reference</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header>Introduction</header>
+                <p>Python is an object-oriented language with high-level data structures, dynamic typing, dynamic binding
+                    and garbage-collected.</p>
+                <p>It uses a multi-paradigm approach, meaning it supports procedural, object-oriented, and some functional
+                    programming constructs.</p>
+                <p>Its language constructs as well as its object-oriented approach aim to help programmers write clear and
+                    logical code, for small and large-scale projects.</p>
+                <p>Python has been around since 1991, has a very active user community and is developed under an
+                    OSI-approved open source license, making it freely usable and distributable, even for commercial use.
+                    Python's license is administered by the <a class="external-link" href="https://www.python.org/psf/"
+                        target="_blank">Python Software Foundation</a>.</p>
+            </section>
+            <section class="main-section" id="features">
+                <header>Features</header>
+                <p>Python is a programming language that lets us work more quickly and integrate our systems more
+                    effectively. We can learn to use Python and see almost immediate gains in productivity and lower
+                    maintenance costs.</p>
+                <p>Python strongs features:</p>
+                <ul>
+                    <li>Powerful, fast and scalable.</li>
+                    <li>Platform independent (portability).</li>
+                    <li>Dynamically-typed language.</li>
+                    <li>OOP (Object-Oriented Programming) language.</li>
+                    <li>High-level language.</li>
+                    <li>Extensible and embeddable language.</li>
+                    <li>GUI (Graphical User Interfaces) support.</li>
+                    <li>Large standard library.</li>
+                    <li>Large community support.</li>
+                    <li>Open-source language.</li>
+                    <li>Easy to get started, easy to learn and easy for developers to read and maintain.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="what_can_we_do_with_python">
+                <header>What can we do with Python</header>
+                <p>Python is used in many application domains. Here are some examples:</p>
+                <ul>
+                    <li>Artificial Intelligence (AI) and Machine Learning.</li>
+                    <li>Scientific and Numeric Applications.</li>
+                    <li>Data Analysis and Data Visualisation.</li>
+                    <li>Web and Internet Development.</li>
+                    <li>Software and Game Development.</li>
+                    <li>Desktop Graphical User Interface (GUI) Applications.</li>
+                    <li>Business Applications.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="how_python_code_gets_executed">
+                <header>How Python Code Gets Executed</header>
+                <p>A Python 'Source Code', is executed line-by-line, from the top to the end of the code, in two sequencial
+                    steps:</p>
+                <ul>
+                    <li><em id="em_text">Compilation Step:</em>
+                        <br>
+                        Is the first step and is where Python 'Source Code' is compiled into an intermediate code, machine
+                        code, known as 'Byte Code', creating a file that ends with the suffix '.pyc'.
+                    </li>
+                    <li><em id="em_text">Execution Step:</em>
+                        <br>
+                        Is the second step and is where the 'Byte Code' gets executed by a PVM ('Pyton Virtual Machine') and
+                        is translate into 'Native Code'.
+                    </li>
+                </ul>
+                <p>'Native Code' will then allow programs to run on a particular operating system (Windows, Mac and Linus).
+                </p>
+                <p>Note that '.py' files contain 'Source Code', whereas '.pyc' files contain 'Byte Code'.</p>
+                <p>Whenever a Python program is called, Python will check, if a compiled version with the '.pyc' suffix
+                    exists. This file has to be newer than the file with the '.py' suffix. If such a file exists, Python
+                    will load the 'Byte Code', which will speed up the start up time of the script. If there is no 'Byte
+                    Code' version, Python will create the 'Byte Code' before it starts the execution of the program.</p>
+            </section>
+            <section class="main-section" id="how_does_python_interact_with_other_pl">
+                <header>How does Python interact with other PL</header>
+                <p>Python is an advanced scripting language that is being used successfully to glue together large software
+                    components. It spans multiple platforms, middleware products, and application domains.</p>
+                <p>Is easily extensible with C/C++/Java code, easily embeddable in applications and supports object-oriented
+                    programming. Python programmers can create classes, use multiple inheritance, define methods, overload
+                    operators, and so on.</p>
+                <p>Python is in use at many places as an integration language, used to glue together ("steer") existing
+                    components. The strategy here is to create Python extension modules (written in C/C++) that make the
+                    functionality of large components written in C/C++ available to the Python programmer.</p>
+                <p>The extension ("glue") modules are required, because Python cannot call C/C++ functions directly, the
+                    glue extensions handle conversion between Python data types and C/C++ data types and error checking,
+                    translation error return values into Python exception.</p>
+                <p>Creation of glue extensions is simplified by the existence of SWIG, which reads header files containing
+                    function and method prototypes and automatically generates the necessary type conversion and error
+                    checking code. In situations where the underlying code (usually C code) doe not use an object-oriented
+                    model, the glue extension can in turn be wrapped in a Python module that defines a proper class
+                    hierarchy, while delegating the performance critical operations to the C code.</p>
+                <p>Because Python has existing interfaces to so many different components in very different application
+                    domains, Python is ideal for oddball integration tasks. It can link a commercial database to
+                    number-crunching code; it can add a graphical user interface to a network management tool; it can send
+                    email from a virtual reality application, and so on.</p>
+            </section>
+            <section class="main-section" id="hello_world">
+                <header>Hello World</header>
+                <p>To get started with writing Python code, is necessary to use an IDE ('Integrated Development
+                    Environment'). In this case, we will used 'PyCharm'. Lets open it and write our first "Hello World"
+                    Python code:</p>
+                <code><pre>
+            <em id="built-in-function">print</em>(<em id="argument">'Hello World'</em>)</pre>
+        </code>
+                <p>To 'run' the code and see the result in the terminal, go to the top menu --&gt 'Run' --&gt 'Run...'.</p>
+                <p>You can also use a shortcut:</p>
+                <ul>
+                    <li>'Alt + Shift + F10' (for Windows)</li>
+                    <li>'Ctrl + Options + R' (for Mac)</li>
+                </ul>
+                <p>Using shortcuts in programming will greatly increase productivity.</p>
+                <p>In Python, we can use either single quotes ( ' ' ) or double quotes( " " ).</p>
+            </section>
+            <section class="main-section" id="variables">
+                <header>Variables</header>
+                <p>Variables are used to temporarily store data in a computer's memory. For example:</p>
+                <code><pre>
+            price = <em id="variable-value">10</em></pre>
+        </code>
+                <p>When Python interpreter execute this code, it will allocate some memory, then it will store the number
+                    '10' in that memory, and finally it will attach the 'price' lable in that memory location.</p>
+                <p>As a metafor image we have a box, that we put the number '10' inside that box, and then put the label
+                    'age' on the box. Now, it is possible to use this label, anywhere in our program to access the value
+                    that is inside that box. To see the result, just print it on the terminal:</p>
+                <code><pre>
+            price = <em id="variable-value">10</em>
+            <em id="built-in-function">print</em>(price)</pre>
+        </code>
+                <p>In a more technical descriptition of the process, the storage of variables works like this:</p>
+                <ul>
+                    <li>When number '10' is about to be store in the memory, first it will be converted to it's binary
+                        representation, which will be a bunch of 0's and 1's, and only after it will be stored in the
+                        computer's memory.</li>
+                    <li>Remember that Python is completely object oriented, and not statically typed, so the value of the
+                        variable, it will be the last value assign to that variable, beacuse Python interpreter read the
+                        code line-by-line, from the top to botton. In the example bellow, the variable 'price' will be '20',
+                        and not '10', because the 'price' was set to '10', but then it was reset to '20' (last value
+                        assigned):</li>
+                    <code id="code_li"><pre>
+                price = <em id="variable-value">10</em>
+                price = <em id="variable-value">20</em>
+                <em id="built-in-function">print</em>(price)</pre>
+            </code>
+                </ul>
+                <p>In resume, to define a variable:</p>
+                <ul>
+                    <li>Start by defining an 'Identifier' (in this case: 'price'), which is the name of the variable.</li>
+                    <li>After, assign a value to the variable (in this case: '10'), using the assign operator equal (' = ').
+                    </li>
+                    <li>It should always be used, lower cases letters, remember that Python is a case sensitive language.
+                    </li>
+                    <li>If a variable name has multiple words in the name, it should be used an underscore ' _ ' to separate
+                        those words, for example, 'is_published'.</li>
+                    <li>Variables should always have descriptive names.</li>
+                </ul>
+                <p>Sometimes there is also a need to assign the same value to several variables, to avoid making individual
+                    assignments:</p>
+                <code><pre>
+            price_a = price_b = price_c = <em id="variable-value">100</em></pre>
+        </code>
+                <p>Another particularly useful thing are temporary variables. They are used to change values between
+                    variables. In the following example, 'temp' represents a temporary variable:</p>
+                <code><pre>
+            product_1 = <em id="argument">'10 Units'</em>
+            product_2 = <em id="argument">'Out of Stock'</em>
+            
+            temp = product_1
+            product_1 = product_2
+            product_2 = temp</pre>
+        </code>
+                <p>As a result we will obtain 'product_1 = 'Out of Stock' ' and 'product_2 = '10 Units' '. We changed we
+                    values of each variable.</p>
+            </section>
+            <section class="main-section" id="type_of_variables">
+                <header>Type of Variables</header>
+                <p>Python has 4 types of variables, to store simple values:</p>
+                <ul>
+                    <li>Integer: represents a whole number, without a decimal point.</li>
+                    <code id="code_li"><pre>
+            price = <em id="variable-value">10</em></pre>
+            </code>
+                    <li>Float: is a number with a decimal part.</li>
+                    <code id="code_li"><pre>
+            rate = <em id="variable-value">4.9</em></pre>
+            </code>
+                    <li>String: is a sequence of characters.</li>
+                    <code id="code_li"><pre>
+            name = <em id="argument">'Paulo'</em></pre>
+            </code>
+                    <li>Boolean: can be 'True' or 'False'.</li>
+                    <code id="code_li"><pre>
+            is_published = <em id="keyword">True</em></pre>
+            </code>
+                </ul>
+                <p>In Python it is also possible to store complex values like 'lists' and 'objects'.</p>
+            </section>
+            <section class="main-section" id="type_conversion">
+                <header>Type Conversition</header>
+                <p>Sometimes it is necessary to convert data, to ensure that a program works properly and does not crash.
+                    For example:</p>
+                <code><pre>
+            birth_year = <em id="built-in-function">input</em>(<em id="argument">'Birth year: '</em>)
+            age = <em id="variable-value">2021</em> - birth_year
+            <em id="built-in-function">print</em>(birth_year)</pre>
+        </code>
+                <p>No matter the input value from the user, when running this code, the program will crash, and will return
+                    an error ('TypeError'). This happens, because we are trying to substruct an integer ('2021'), from a
+                    string ('input('Birth year: ')') that is the input provided from the user. To solve this issue, is
+                    necessary to convert the string ('str') porvided from the user, to an integer ('int').</p>
+                <code><pre>
+            birth_year = <em id="built-in-function">input</em>(<em id="argument">'Birth year: '</em>)
+            age = <em id="variable-value">2021</em> - <em id="built-in-function">int</em>(birth_year)
+            <em id="built-in-function">print</em>(age)</pre>
+        </code>
+                <p>Lets see some built-in functions, use to convert values into different types:</p>
+                <ul>
+                    <li>'int()': convert a string into an integer.</li>
+                    <li>'float': convert a string into a 'float' or a number with a decimal point.</li>
+                    <li>'bool': convert a string into a boolean value.</li>
+                </ul>
+                <p>To see the 'type' of variable it can be use another built-in function ( 'type( )' ):</p>
+                <code><pre>
+            birth_year = <em id="built-in-function">input</em>(<em id="argument">'Birth year: '</em>)
+            <em id="built-in-function">print</em>(<em id="built-in-function">type</em>(birth_year))</pre>
+        </code>
+            </section>
+            <section class="main-section" id="receiving_inputs">
+                <header>Receiving inputs</header>
+                <p>In Python there are several built-in functions for common tasks like printing messages, receiving inputs
+                    and so on. For example, to receive inputs from the users, it is used the 'input' built-in function:</p>
+                <code><pre>
+            <em id="built-in-function">input</em>(<em id="argument">'What is your name? '</em>)</pre>    
+        </code>
+                <p>This 'input' message, will print this message on the terminal and will wait for the user to enter a
+                    value. Whatever the user enter, this 'input' function will return. So is possible to get that value and
+                    store it in the memory using a variable ('name'):</p>
+                <code><pre>
+            name = <em id="built-in-function">input</em>(<em id="argument">'What is your name? '</em>)</pre>
+        </code>
+                <p>As a final code we can have this expression, that concatenates or combines, in this case, a string with
+                    another string:</p>
+                <code><pre>
+            name = <em id="built-in-function">input</em>(<em id="argument">'What is your name? '</em>)
+            <em id="built-in-function">print</em>(<em id="argument">'My name is'</em> + name)</pre>
+        </code>
+                <p>Notes:</p>
+                <ul>
+                    <li>'input()': always return data as a string. If necessary, that data must be converted into an
+                        interger ('int()'), float ('float()')', and so on.</li>
+                    <li>'name': is the variable name.</li>
+                    <li>'My name is': is the string that is being concatenated using the ' + ' sign.</li>
+                    <li>There is a space after the '?', in the end of the input string, so that the message that will be
+                        printed in the terminal, can be separeted from the questions asked:</li>
+                    <code id="code_li"><pre>
+            What is your name? Paulo</pre>
+            </code>
+                </ul>
+            </section>
+            <section class="main-section" id="strings">
+                <header>Strings</header>
+                <p>Strings ('str') in Python are defined using single quotes (' ') or double quotes (" "). To define a
+                    multi-line string, we surround our string widh triple quotes (" " "). Example:</p>
+                <code><pre>
+            course = <em id="argument">"Python Course for 'Beginners'"</em></pre>
+        </code>
+                <p>In the case above, is necessary to use double quotes, because we want to wrap the word Beginners inside
+                    double quotes. For Python, and without the double quotes, the 'str' would end in "Python Course for" and
+                    it would not be able to know what the rest of the characters ("Beginners") represented.</p>
+                <p>If we want a 'srt' that expandes throughout multiple-lines, we can use 3 quotes, like this:</p>
+                <code><pre>
+            course = <em id="argument">'''
+            Hello Paulo,
+            
+            Here is our first e-mail to you.
+            
+            Thank you,
+            The company manager
+            '''</em>
+            
+            <em id="built-in-function">print</em>(course)</pre>
+        </code>
+                <p>We can get an individual character in a 'str', using square brackets '[ ]' and specifing the index of
+                    that character:</p>
+                <code><pre>
+            course = <em id="argument">'Python for Beginners'</em>
+            <em id="built-in-function">print</em>(course[<em id="variable-value">0</em>])</pre>
+        </code>
+                <p>In this case the result will be 'P', because the index '0' of this 'str' is 'P'.</p>
+                <p>How Python index 'str' are set:</p>
+                <code><pre>
+            <em id="argument">'Python for Beginners'</em>
+            '01234567...'</pre>
+        </code>
+                <p>It is also possible to use negative index. In these cases, Python will start counting from the end of the
+                    str', to the start of the 'str':</p>
+                <code><pre>
+            course = <em id="argument">'Python for Beginners'</em>
+            <em id="built-in-function">print</em>(course[<em id="variable-value">-1</em>])</pre>
+        </code>
+                <p>In this case, the result will be 's'. How Python 'str' are index, using negative index:</p>
+                <code><pre>
+            <em id="argument">'Python for Beginners'</em>
+            '           ... -2 -1'</pre>
+        </code>
+                <p>Notes:</p>
+                <ul>
+                    <li>'course[0]': returns the first character.</li>
+                    <li>'course[1]': returns the second character.</li>
+                    <li>'course[-1]': returns the first character counting from the end.</li>
+                    <li>'course[-2]': returns the second character counting from the end.</li>
+                </ul>
+                <p>We can also slice a 'str', using a similar notation:</p>
+                <code><pre>
+            <em id="built-in-function">print</em>(course[<em id="variable-value">1</em>:<em id="variable-value">5</em>])</pre>
+        </code>
+                <p>In this case the result will be 'ython'. Note that the above expression returns all the characters
+                    starting from index position of '1' to '5', but excluding '5'.</p>
+                <p>Notes:</p>
+                <ul>
+                    <li>If we leave out the start index, '0' will be assumed.</li>
+                    <li>If we leave out the end index, the length of the 'str' will be assumed.</li>
+                    <li>If we do not set any values ( 'course[ : ]' ), the whole 'str' will be returned.</li>
+                </ul>
+                <p>Is also possible to use formatted 'str' to dynamically insert values into our 'str':</p>
+                <code><pre>
+            name = <em id="argument">'Paulo'</em>
+            message = <em id="argument">f'Hello, my name is</em> <em id="keyword">{</em>name<em id="keyword">}</em><em id="argument">'</em>
+            <em id="built-in-function">print</em>(message)</pre>
+        </code>
+                <p>And to check if a 'str' contains a character (or a sequence of characters), we can use the 'in' operator:
+                </p>
+                <code><pre>
+            course = <em id="argument">'Python for Beginners'</em>
+            contains = <em id="argument">'Python'</em> <em id="keyword">in</em> course
+            <em id="built-in-function">print</em>(contains)</pre>
+        </code>
+                <p>The return result will be 'True' (boolean value).</p>
+            </section>
+            <section class="main-section" id="formatted_strings">
+                <header>Formatted Strings</header>
+                <p>Formatted strings are particularly useful in situations where we want to dynamically generate some text
+                    with our variables. For that we use the prefix ' f '.</p>
+                <p>Let us suppose we have 2 variables, 'frist_name' and 'last_name', and we want to generate a message
+                    saying 'Paulo Fidalgo is a coder'. For that we can generate the following code:</p>
+                <code><pre>
+            first_name = <em id="argument">'Paulo'</em>
+            last_name = <em id="argument">'Fidalgo'</em>
+            
+            message = first_name + <em id="argument">' '</em> + last_name + <em id="argument">' is a coder'</em>
+            <em id="built-in-function">print</em>(message)</pre>
+        </code>
+                <p>Or we can simplify it, using 'formatted strings', like this:</p>
+                <code><pre>
+            first_name = <em id="argument">'Paulo'</em>
+            last_name = <em id="argument">'Fidalgo'</em>
+            
+            message = <em id="argument">f'</em><em id="keyword">{</em>first_name<em id="keyword">}</em> <em id="keyword">{</em>last_name<em id="keyword">}</em> <em id="argument">is a coder'</em>
+            <em id="built-in-function">print</em>(message)</pre>
+        </code>
+                <p>This way, it is easier to visualize the final result of the code.</p>
+                <p>So to define 'formatted strings', prefix the string with an ' f ' and then use curly braces to
+                    dynamically insert values into our string.</p>
+                <p>Note that by using curly braces '{ }' we are defining 'place holders' or 'holes' in our string, and when
+                    we run our program these 'holes' will be filled with the value of our variables.</p>
+            </section>
+            <section class="main-section" id="string_methods">
+                <header>String Methods</header>
+                <p>There are several built-in functions that allow us to work with Python strings. Suppose we define the
+                    string 'Python for Beginners' and that we store it in a variable called 'course':</p>
+                <code><pre>
+            course = <em id="argument">'Python for Beginners'</em></pre>
+        </code>
+                <p>If we want to work with this string we use built-in functions ('methods' or 'general-purpose functions').
+                </p>
+                <p>When a function belongs to something else, or is specific to some kind of object, we refer to that
+                    function as a 'method'. This is a term used in object oriented programming. On the other hand,
+                    'general-purpose functions', like 'len()', 'print()', 'input()', and so on, they do not belong to a
+                    string, numbers, or any other kind of objects.</p>
+                <p>Let us see some examples:</p>
+                <ul>
+                    <p>'Methods':</p>
+                    <li>'.upper()': convert the string characters in uppercase.</li>
+                    <li>'.lower()': convert the string characters in lowercase.</li>
+                    <li>'.title()': capitalize the first letter of every word.</li>
+                    <li>'.find('p')': return the index of the first occurrence of 'p' (if 'p' does not exist, the result
+                        will be '1'.</li>
+                    <li>'.replace('p', 'q')': replace every 'p' of the string for a 'q'.</li>
+                    <li>Note that to access some of this functions, we use the 'dot' notation. In these cases, this
+                        functions are called 'methods'.</li>
+                    <code id="code_li"><pre>
+            course = <em id="argument">'Python for Beginners'</em>
+                
+            <em id="built-in-function">print</em>(course.upper())
+            <em id="built-in-function">print</em>(course.lower())
+            <em id="built-in-function">print</em>(course.title())
+            <em id="built-in-function">print</em>(course.find(<em id="argument">'p'</em>))
+            <em id="built-in-function">print</em>(course.replace(<em id="argument">'Beginners'</em><em id="keyword">,</em> <em id="argument">'Absolute Beginners'</em>))</pre>
+            </code>
+                </ul>
+                <ul>
+                    <p>'General-purpose functions':</p>
+                    <li>'len()': return the number of items inside a string:</li>
+                    <code id="code_li"><pre>
+            course = <em id="argument">'Python for Beginners'</em>
+            <em id="built-in-function">print</em>(<em id="built-in-function">len</em>(course))</pre>
+            </code>
+                    <li>'len(course)': return '20', that represents the number of characters in the string 'course'.
+                        <br>
+                        Particularly useful, to enforse a limit on the number of characters in a form on-line. If the user
+                        insert more characters then what we allow them, we can display an error message.
+                        <br>
+                        'len' is a general-purpose function, so it is not only limited to counting the numbers of
+                        characters, it can also be used with 'lists' to count the number of items in a 'list'.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="arithmetic_operations">
+                <header>Arithmetic operations</header>
+                <p>Arithmetic operators in Python:</p>
+                <ul>
+                    <li> + , - , * , /</li>
+                    <li>// : returns an 'int'.</li>
+                    <li>% : returns the remainder of a division.</li>
+                    <li>** : exponentiation 'x ** y = x to the power of y'.</li>
+                </ul>
+                <p>For all these operators there is an 'augmented assignment operator', that allows the code to be shorter:
+                </p>
+                <ul>
+                    <li>+= , -= , *= , /=</li>
+                    <code id="code_li"><pre>
+            x = <em id="variable-value">10</em>
+            
+            <em id="comments">#Normal code:</em>
+            x = x + <em id="variable-value">4</em>
+            <em id="built-in-function">print</em>(x)
+            
+            <em id="comments">#Using augmented operators:</em>
+            x += <em id="variable-value">4</em>
+            <em id="built-in-function">print</em>(x)</pre>          
+            </code>
+                </ul>
+            </section>
+            <section class="main-section" id="math_functions">
+                <header>Math Functions</header>
+                <p>There are several built-in functions for preforming mathematical operations. Here are some examples:</p>
+                <code><pre>
+            x = <em id="variable-value">2.9</em>
+            
+            <em id="built-in-function">print</em>(<em id="built-in-function">round</em>(x))
+            
+            <em id="built-in-function">print</em>(<em id="built-in-function">abs</em>(x))
+            
+            <em id="built-in-function">print</em>(x)</pre>
+        </code>
+                <p>Notes:</p>
+                <ul>
+                    <li>'round(x)': round a number to the closest 'int', in this case '3' (lower or equal to '2.5', returns
+                        '2', greater than '2.51', returns '3').</li>
+                    <li>'abs(x)': return the absolute positive number, even if 'x' is negative.</li>
+                </ul>
+                <p>If we want to write complex mathematical operations or programs, we need to import the 'math module'. A
+                    'module' in Python, is a separeted file with some reusable code. 'Modules' are use to organize our code
+                    in different files.</p>
+                <p>To import this module we need to write this code:</p>
+                <code><pre>
+            <em id="keyword">import</em> math</pre>
+        </code>
+                <p>After running the code above, 'math' module becames an object, like a string, so we can access its
+                    functions, or more accurately its methods, using the 'dot' operator:</p>
+                <code><pre>
+            x = <em id="variable-value">2.9</em>
+            
+            <em id="built-in-function">print</em>(math.ceil(x))
+            
+            <em id="built-in-function">print</em>(math.floor(x))</pre>        
+        </code>
+                <p>Notes:</p>
+                <ul>
+                    <li>'math.ceil(x)': returns the sealing of a number, in this case '3'.</li>
+                    <li>'math.floor()': returns the floor of a number, in this case '2'.</li>
+                    <li>To see a more complet list go to <a class="external-link"
+                            href="https://docs.python.org/3/library/math.html" target="_blank">Python Mathematical
+                            Functions</a></li>
+                </ul>
+            </section>
+            <section class="main-section" id="if_else_statement">
+                <header>if...else statement</header>
+                <p>'If statments' are extremeally important in programming and they allow us to built programs that can make
+                    decisions based on some conditions.</p>
+                <p>This is the base structure of an 'if statment':</p>
+                <code><pre>
+            <em id="keyword">if</em> (condition)
+            
+            <em id="keyword">else</em> (condition)</pre>
+        </code>
+                <p>There is also a slightly more complex structure of 'if statments':</p>
+                <code><pre>
+            <em id="keyword">if</em> (condition)
+            
+            <em id="keyword">elif</em> (condition)
+            
+            <em id="keyword">elif</em> (condition)
+            
+            ...
+            
+            <em id="keyword">else</em> (condition)</pre>
+        </code>
+                <p>Let us see an example. Suppose we want to write a program for buying a house. The price of a house is
+                    $1M. If the buyer has a good credit, then buyer needs to put down 10%, otherwise, buyer needs to put
+                    down 20%:</p>
+                <code><pre>
+            price = <em id="variable-value">1_000_000</em>
+            has_good_credit = <em id="keyword">True</em>
+            
+            <em id="keyword">if</em> has_good_credit:
+                down_payment = <em id="variable-value">0.1</em> * price
+            
+            <em id="keyword">else:</em>
+                down_payment = <em id="variable-value">0.2</em> * price
+            
+            <em id="built-in-function">print</em>(<em id="argument">f"Down payment: $</em> <em id="keyword">{</em>down_payment<em id="keyword">}</em><em id="argument">")</em></pre>               
+        </code>
+            </section>
+            <section class="main-section" id="logical_operators">
+                <header>Logical operators</header>
+                <p>We use logical operators when we have multiple conditions that need to be evaluated. These are the
+                    logical operators in Python:</p>
+                <ul>
+                    <li>'AND': all the conditions must be 'True'.</li>
+                    <li>'OR': at least one of the conditions must be 'True'.</li>
+                    <li>'NOT': invert the value of a boolean value ('not True = False' and 'not False = True').</li>
+                </ul>
+                <p>Let us see the following example. If an applicant has high income AND good credit, then is eligible for
+                    loan:</p>
+                <code><pre>
+            has_high_income = <em id="keyword">True</em>
+            has_good_credit = <em id="keyword">True</em>
+            
+            <em id="keyword">if</em> has_high_income <em id="keyword">and</em> has_good_credit:
+            <em id="built-in-function">print</em>(<em id="argument">"Eligible for loan"</em>)</pre>
+        </code>
+            </section>
+            <section class="main-section" id="comparison_operators">
+                <header>Comparison operators</header>
+                <p>'Comparison operators' are used in situations where we want to compare a variable to a value. These are
+                    the 'comparison operators' in Python:</p>
+                <ul>
+                    <li>' &gt ', ' &gt= ': 'greater then' or 'greater then and equal to'.</li>
+                    <li>' &lt ', ' &lt= ': 'less then' or 'less then and equal to'.</li>
+                    <li>' == ': 'equal to' (different from ' = ', that represents the assign operator).</li>
+                    <li>' != ': 'not equal to'.</li>
+                </ul>
+                <p>Lets suppose we want to write a program that validates the user input name, when filling a form online.
+                    If name is less than 4 characters long, it will return 'name must be at least 4 characters'. Otherwise,
+                    if it is more than 50 characters long, it will return 'name can be a maximun of 50 characters'.
+                    Otherwise 'name looks good!':</p>
+                <code><pre>
+            name = <em id="built-in-function">input</em>(<em id="argument">'Please fill your name: '</em>)
+        
+            <em id="keyword">if</em> <em id="built-in-function">len</em>(name) &lt <em id="variable-value">4</em>:
+                <em id="built-in-function">print</em>(<em id="argument">'Name must be at least 4 characters'</em>)
+        
+            <em id="keyword">elif</em> <em id="built-in-function">len</em>(name) &gt <em id="variable-value">50</em>:
+                <em id="built-in-function">print</em>(<em id="argument">'Name can be a maximun of 50 characters'</em>)
+        
+            <em id="keyword">else</em>:
+                <em id="built-in-function">print</em>(<em id="argument">'Name looks good!'</em>)</pre>
+        </code>
+            </section>
+            <section class="main-section" id="while_loops">
+                <header>While loops</header>
+                <p>'While loops' are used to execute a block of code, multiple times. They are often used to build
+                    interactive programs and games.</p>
+                <p>We write 'while statements' and right after, we type the condition followed by a colon. As long as the
+                    condition is true, the code will be repeatedly executed. When the condition is false, the cycle ends.
+                    Here is an example:</p>
+                <code><pre>
+            i = <em id="variable-value">1</em>
+            
+            <em id="keyword">while</em> i &lt= <em id="variable-value">5</em>:
+                <em id="built-in-function">print</em>(i)
+                i = i + <em id="variable-value">1</em></pre>
+        </code>
+                <p>In this example, the variable 'i' has set to '1', and as long as 'i' is less or equal to '5', the result
+                    will be printed on the terminal. We use 'i = i + 1', to increment 'i' by '1', after each cycle, and the
+                    reason we do this is to ensure that the 'while loop' will end, otherwise 'i' would be '1' forever, so we
+                    would end with an infinite loop, because the condition would always be true ('i = 1' is always less than
+                    '5').</p>
+                <p>Let us see a more complex example. Imagine we want to build a guessing game, using a 'while loop'.
+                    Suppose we have to guess what is the secret number of the game and that we have 3 attempts to guess it.
+                    If we do not guess, we will receive a message saying 'Sorry you failed!' and if we guess it, a message
+                    saying 'You win!'. Code could be something like this:</p>
+                <code><pre>
+            secret_number = <em id="variable-value">9</em>
+            guess_count = <em id="variable-value">0</em>
+            guess_limit = <em id="variable-value">3</em>
+            
+            <em id="keyword">while</em> guess_count &lt guess_limit:
+                guess = <em id="built-in-function">int</em>(<em id="built-in-function">input</em>(<em id="argument">'Guess: '</em>))
+                guess_count += <em id="variable-value">1</em>
+                <em id="keyword">if</em> guess == secret_number:
+                    <em id="built-in-function">print</em>(<em id="argument">'You won!'</em>)
+                    <em id="keyword">break</em>
+            
+            <em id="keyword">else</em>:
+                <em id="built-in-function">print</em>(<em id="argument">'Sorry you failed! Try again!'</em>)</pre>
+        </code>
+                <p>Notes:</p>
+                <ul>
+                    <li>'while loops' and 'if statements' can optionally have an 'else' part, or they can be terminated by
+                        using the 'break' statement. In this case, 'if statement' does not have an 'else' part, but has a
+                        'break' statement. When Python interpreter sees this, it is going to immediately terminate our loop,
+                        it is not going to evaluate the condition ( 'guess_count &lt guess_limit' ) again.</li>
+                    <li>The 'else' part in the 'while loop' will get executed, if the 'while loop' completes successfully
+                        the 3 attempts, without an immediate 'break'.</li>
+                    <li>In resume, if the users guess the number, in one of the 3 attempts, Python interpreter will break
+                        the loop and jump out of it, so the code in the 'else' block will not be executed. But if the user
+                        can not guess the number in the 3 attempts, Python interpreter will never break out of the loop, and
+                        it will run until the 'while loop' is completed (3 attempts) and the condition set ('guess_count &lt
+                        guess_limit') becames false. In that case, the code in the 'else' block will get executed.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="for_loops">
+                <header>For loops</header>
+                <p>'For loops' are used to iterate over items of a collection, such as lists, strings and so on. Here is an
+                    example:</p>
+                <code><pre>
+            <em id="keyword">for</em> item <em id="keyword">in</em> [<em id="variable-value">1</em><em id="keyword">,</em> <em id="variable-value">2</em><em id="keyword">,</em> <em id="variable-value">3</em><em id="keyword">,</em> <em id="variable-value">4</em><em id="keyword">,</em> <em id="variable-value">5</em>]:
+                <em id="built-in-function">print</em>(item)</pre>
+        </code>
+                <p>With this code, we are defining the variable 'item', this is what we call a 'loop variable', and in each
+                    iteration, this variable will hold one item. By using this 'for loop', we can iterate over this string
+                    and in each iteration, this 'item' variable will hold one character at a time. In the first iteration
+                    the variable 'item' will be set to '1', then in the second iteration it will be set to '2', and so on.
+                </p>
+                <p>We can also iterate in a range of numbers, like this:</p>
+                <code><pre>
+            <em id="keyword">for</em> item <em id="keyword">in</em> <em id="built-in-function">range</em>(<em id="variable-value">10</em>):
+                <em id="built-in-function">print</em>(item)</pre>
+        </code>
+                <p>In this code, the 'range' function creates an object, is not a list, it is a special kind of object that
+                    we can iterate over, and in each iteration this object will spit out a new number. In this case '10' is
+                    not included. Other possibilities could be:</p>
+                <code><pre>
+            <em id="keyword">for</em> item <em id="keyword">in</em> <em id="built-in-function">range</em>(<em id="variable-value">5</em><em id="keyword">,</em> <em id="variable-value">10</em>)
+            
+            <em id="keyword">for</em> item <em id="keyword">in</em> <em id="built-in-function">range</em>(<em id="variable-value">5</em><em id="keyword">,</em> <em id="variable-value">10</em><em id="keyword">,</em> <em id="variable-value">2</em>)</pre>
+        </code>
+                <p>In the last case, '2' represents the 'step' forward in each iteration (5, 7, 9).</p>
+                <p>Here is another example of a 'for loop', use to calculate the total cost of all the items in a shopping
+                    card:</p>
+                <code><pre>
+            prices = [<em id="variable_value">10</em><em id="keyword">,</em> <em id="variable-value">20</em><em id="keyword">,</em> <em id="variable-value">30</em>]
+            total = <em id="variable-value">0</em>
+            
+            <em id="keyword">for</em> price <em id="keyword">in</em> prices:
+                total += price
+            
+            <em id="built-in-function">print</em>(<em id="argument">f'total: $</em><em id="keyword">{</em>total<em id="keyword">}</em><em id="argument">'</em>)</pre>
+        </code>
+            </section>
+            <section class="main-section" id="nested_loops">
+                <header>Nested Loops</header>
+                <p>'Nested loops' basically means adding one 'loop' inside of another 'loop', and with this technique we can
+                    do some amazing things. As an example we can generate a list of coordinates, with 'x' and 'y' values.
+                </p>
+                <p>Lets imagine we want to generate all of this coordinates: (0, 0), (0, 1), (0, 2), (1, 0), ... (3, 3).</p>
+                <code><pre>
+            <em id="keyword">for</em> x <em id="keyword">in</em> <em id="built-in-function">range</em>(<em id="variable-value">4</em>):
+                <em id="keyword">for</em> y <em id="keyword">in</em> <em id="built-in-function">range</em>(<em id="variable-value">4</em>):
+                <em id="built-in-function">print</em>(<em id="argument">f'(</em><em id="keyword">{</em>x<em id="keyword">}</em>, <em id="keyword">{</em>y<em id="keyword">}</em><em id="argument">)'</em>)</pre>
+        </code>
+                <p>In the first iteration and in line one of the code, we get 'x = 0', and in line two (in the 'inner loop')
+                    and also in the first iteration we get 'y = 0 ', so it will be printed on the terminal '(0, 0)'.</p>
+                <p>Now the controls go back to line two, or our 'inner loop' and on this second iteration 'y = 1', but we
+                    are still in the first iteration of our 'outer loop', so 'x = 0', but now 'y' is incremented to '1'.
+                    That is why we see '(0, 1)' on the terminal.</p>
+                <p>This process will continue until the 'inner loop' ('for y in range(4)'), is completes. That is when 'y'
+                    reaches '3', because the range function of the 'inner loop' generates numbers between '0' to '4', but
+                    not including '4', so we will have '0', '1', '2' and '3'.</p>
+                <p>After this 'inner loop' completes, then the control goes back to line one, and at this point we are going
+                    to be in the second iteration of our 'outer loop'. So 'x' will be '1', then the control will be moved to
+                    line two, or our 'inner loop', at this point this range function is going to generate the numbers '0',
+                    '1', '2' and '3', so the 'inner loop' will be executed once agian for 4 times, and then it will go back
+                    to the 'outer loop'. This is how 'nested loops' get executed.</p>
+            </section>
+            <section class="main-section" id="lists">
+                <header>Lists</header>
+                <p>In Python we can define 'lists' using square brackets '[ ]'. We can have a list of items, a list of
+                    numbers, a list of costumers, a list of emails, products, whatever. Let us see an example:</p>
+                <code><pre>
+            names = [<em id="argument">'John'</em><em id="keyword">,</em> <em id="argument">'Paulo'</em><em id="keyword">,</em> <em id="argument">'Eli'</em><em id="keyword">,</em> <em id="argument">'Sarah'</em><em id="keyword">,</em> <em id="argument">'Mary'</em>]
+            <em id="built-in-function">print</em>(names[<em id="variable-value">1</em>])
+            </pre>
+        </code>
+                <p>In those 'lists' we can access each individual item, just like we did to access each character of a
+                    string, by using the index number of the item we want. In the example above, we used index '1', so we
+                    will see printed on the terminal, the item of the list 'names' with the index '1' that is 'Paulo'.</p>
+                <p>To access the item of a 'list', we can use positive index, negative index and a range, to specify the
+                    data we want to extract from the 'list', and the 'original list' is not affected, it stays the same.</p>
+                <p>Let us see some examples of ways to extract items from 'lists':</p>
+                <ul>
+                    <li>'course[0]': returns the first item.</li>
+                    <li>'course[1]': returns the second item.</li>
+                    <li>'course[-1]': returns the first item counting from the end.</li>
+                    <li>'course[-2]': returns the second item counting from the end.</li>
+                    <li>'course[1:]': returns a list with all the items, starting on item with index '1', in this case
+                        'Paulo'.</li>
+                    <li>'course[:3]': returns a list with all the items, ending on item with index '2', in this case'Eli',
+                        and excluding item '3', in this case 'Sarah'.</li>
+                    <li>'course[:]': returns a similar list as the original one.</li>
+                </ul>
+                <p>The items of a 'list', can also be easilly modified, for example if we made a mistake. For that we should
+                    access the item we want to change, using the index item number and set it to a new value. Suppose we
+                    want to change the first item of the 'list' from 'John' to 'Jon':</p>
+                <code><pre>
+            names[<em id="variable-value">0</em>] = <em id="argument">'Jon'</em>
+            <em id="built-in-function">print</em>(names)</pre>
+        </code>
+                <p>Now the 'list' will be '['Jon', 'Paulo', 'Eli', 'Sarah', 'Mary']'. By doing this, we update the 'list',
+                    we overwrite it, and we no longer have the 'original list'.</p>
+                <p>Let us see another example, by writing a program to find the largest number in a 'list':</p>
+                <code><pre>
+            numbers = [<em id="variable-value">3</em><em id="keyword">,</em> <em id="variable-value">6</em><em id="keyword">,</em> <em id="variable-value">2</em><em id="keyword">,</em> <em id="variable-value">8</em><em id="keyword">,</em> <em id="variable-value">10</em><em id="keyword">,</em> <em id="variable-value">4</em>]
+            max = numbers[<em id="variable-value">0</em>]
+            
+            <em id="keyword">for</em> number <em id="keyword">in</em> numbers:
+                <em id="keyword">if</em> number &gt max:
+                    max = number
+            
+            <em id="built-in-function">print</em>(max)</pre>
+        </code>
+                <p>In the example above, we assume that the maximun number in our 'list', is the first item, in this case
+                    '3'. Chances are our assumption is wrong, so we need to iterate over the list, we need to loop through
+                    it, get each item and compare it with 'max'. If it is greater than 'max', then we need to reset 'max' to
+                    that number.</p>
+                <p>So in the first iteration we get '3' and the 'max' is also '3'. Is '3' greater than '3'? No. So we move
+                    on, we get the second number, is '6' greater than '3'? It is. So we need to reset 'max' to '6'. Once
+                    again, we continue, we get '2'. Is '2' greater than '6'? No. So we move on. And we continue like this,
+                    until we check all the item of the 'list'.</p>
+            </section>
+            <section class="main-section" id="2d_lists">
+                <header>2D Lists</header>
+                <p>'Two dimensional lists' are extremely powerfull and they have a lot of applications in data science and
+                    machine learning.</p>
+                <p>For example, in math we have a concept called 'matrix', which is like a rectangular array of numbers,
+                    where we have rows and columns. We can model this in Python, using '2D lists'. A '2D lists' is a list,
+                    where each item in that list is another list. Let us see an example:</p>
+                <code><pre>
+            matrix = [
+                [<em id="variable-value">1</em><em id="keyword">,</em> <em id="variable-value">2</em><em id="keyword">,</em> <em id="variable-value">3</em>]<em id="keyword">,</em>
+                [<em id="variable-value">4</em><em id="keyword">,</em> <em id="variable-value">5</em><em id="keyword">,</em> <em id="variable-value">6</em>]<em id="keyword">,</em>
+                [<em id="variable-value">7</em><em id="keyword">,</em> <em id="variable-value">8</em><em id="keyword">,</em> <em id="variable-value">9</em>]
+            ]</pre>
+        </code>
+                <p>In the above example, we defined a 'matrix' and we set it to a list. Each item in this list, is going to
+                    be another list, and that list represents the items in each row.</p>
+                <p>So the first item in our list, is going to be another list, and in the first list we are going to have
+                    the values '1', '2' and '3' ('[1, 2, 3]'). Now, the second item in our matrix list, once again, will bea
+                    list. This list represents the items in the second row, so the values '4', '5' and '6' ('[1, 2, 3]').
+                    And finally the third list, items '7', '8' and '9' ('[7, 8, 9]'). Note that we separate each list in
+                    each row by using a ','.</p>
+                <p>So as you can see, we have a two dimensional list. Each item in our outer list, is another list, and this
+                    is how we can implement a 'matrix' in Python.</p>
+                <p>Now, to access an individual item in our 'matrix', once again we use square brackets '[ ]'. Lets suppose
+                    we want to access the number '2' in our 'matrix':</p>
+                <code><pre>
+            <em id="built-in-function">print</em>(matrix[<em id="variable-value">0</em>][<em id="variable-value">1</em>])</pre>
+        </code>
+                <p>In this code, first we need to go and get the first item in this list, so we pass '0'. Now this
+                    expression returns another list. That is the inner list. In this list, let's say we want to access the
+                    second item, so once again, we add another square brackets, and we pass '1', that is the index of number
+                    '2' in this list. So, by using two square brackets, we can access individual items in our 'matrix'.</p>
+                <p>It is also possible to modify items in our 'matrix', like this:</p>
+                <code><pre>
+            matrix[<em id="variable-value">0</em>][<em id="variable-value">1</em>] = <em id="variable-value">20</em>
+            <em id="built-in-function">print</em>(matrix[<em id="variable-value">0</em>][<em id="variable-value">1</em>])</pre>
+        </code>
+                <p>Or use 'nested loops' to iterate over all the item in this 'matrix':</p>
+                <code><pre>
+            <em id="keyword">for</em> row <em id="keyword">in</em> matrix:
+                <em id="keyword">for</em> item <em id="keyword">in</em> row:
+                    <em id="built-in-function">print</em>(item)</pre>
+        </code>
+                <p>In the code above, we start with our 'rows', so in that loop ('for row in matrix:') we are iterating over
+                    our 'matrix' list, and in each iteration, 'row' will contain one item, in this case the item is a list
+                    (for example '[1, 2, 3]'). And after, we use an 'inner loop' ('for item in row:'). The final result in
+                    this case, is all the items of our 'matrix' ('1', '2', ..., '9').</p>
+            </section>
+            <section class="main-section" id="list_methods">
+                <header>List Methods</header>
+                <p>In this section, we will explore some list 'methods' or 'functions', these are the operations we can
+                    perform in a list, like adding items, removing existing items, check for the existence of an item, and
+                    so on. To access these 'methods' we use the 'dot' notation. Let us define a list of number and execute
+                    some of these operations:</p>
+                <code><pre>
+            numbers = [<em id="variable-value">5</em><em id="keyword">,</em> <em id="variable-value">2</em><em id="keyword">,</em> <em id="variable-value">1</em><em id="variable-value">,</em> <em id="variable-value">5</em><em id="keyword">,</em> <em id="variable-value">7</em><em id="keyword">,</em> <em id="variable-value">4</em>]
+            numbers.append(<em id="variable-value">20</em>)
+            
+            <em id="built-in-function">print</em>(numbers)</pre>
+        </code>
+                <p>In this code, we are adding the number '20' to our list. When we print the list on the terminal, this new
+                    number, will appear on the end of that list.</p>
+                <p>Let us see some 'methods' we can use with lists:</p>
+                <ul>
+                    <li>'.append(20)': add a new item to a list. The new item will appear on the end of the list.</li>
+                    <li>'.insert(2, 10)': add a number in the position we want (middle, beginning, ...). This 'method' takes
+                        two values, the first represents the 'index' at which we want to insert the new value (in this case
+                        '2'), and the second represents the actual 'object' we want to add to the list (in this case '10').
+                    </li>
+                    <li>'.remove(20)': remove an item from a list.</li>
+                    <li>'.clear()': remove all the item from a list. This 'method' does not take any values.</li>
+                    <li>'.pop()': remove the last item from a list. This 'method' does not take any values.</li>
+                    <li>'.count(5)': count the occurance of an item (in this case return '2', because we have two '5').</li>
+                    <li>'.sort()': sort the list in an ascending order. This 'method' does not take any values.</li>
+                    <li>'.reverse()': reverse the items in a list. The 'reverse' method, can be used, for example, after the
+                        '.sort()' method, sorting the items in descending order.</li>
+                    <li>'.copy()': copy the list. This 'method' does not take any values, and the new list will not be
+                        updated if we make changes on the inicial list, because this are two independent lists.</li>
+                    <li>'.index(5)': check the existence of an item in a list. This 'method' returns the first occurence of
+                        this item. If it is passed a value that it is not on the list, we will obtain an error message.</li>
+                    <li>'print(50 in numbers)': check the existence of a character, or a sequence of characters, in a
+                        string, using the 'in' operator with a string. In this case because '50' is not in the list, we will
+                        obtain a boolean value, in this case 'False'. Does not generate an error message.</li>
+                </ul>
+                <p>Let us see an example of the utility of these 'methods', by writing a program that allow us to remove all
+                    the duplicate itens in a list:</p>
+                <code><pre>
+            numbers = [<em id="variable-value">2</em><em id="keyword">,</em> <em id="variable-value">2</em><em id="keyword">,</em> <em id="variable-value">4</em><em id="keyword">,</em> <em id="variable-value">6</em><em id="keyword">,</em> <em id="variable-value">3</em><em id="keyword">,</em> <em id="variable-value">4</em><em id="keyword">,</em> <em id="variable-value">6</em><em id="keyword">,</em> <em id="variable-value">1</em>]
+            uniques=[]
+            
+            <em id="keyword">for</em> number <em id="keyword">in</em> numbers:
+                <em id="keyword">if</em> number <em id="keyword">not in</em> uniques:
+                    uniques.append(number)
+                
+            <em id="built-in-function">print</em>(uniques)</pre>
+        </code>
+                <p>In the code above, first we need to define a new list ('uniques') and set it initially to an empty list.
+                    Then we need to iterate over our first list ('numbers'), get each item, and if we do not have that
+                    number in the 'unique' list, then we will add it to this second list.</p>
+            </section>
+            <section class="main-section" id="tuples">
+                <header>Tuples</header>
+                <p>'Tuples' are another important structure in Python. 'Tuples' are similar to lists, so we can use them to
+                    store a list of items. But unlike lists, we can not modify them, we can not add new items, we can not
+                    remove existing items. We say 'tuples' are immutable. We can not mutate or change them.</p>
+                <p>Most of the times we use lists in our programs, but 'tuples' are also useful. For example, to create a
+                    list of items and we want to make sure that accidentally we do not modify that list, then it is better
+                    to use a 'tuple'.</p>
+                <p>To define 'tuples' we use parentheses '( )':</p>
+                <code><pre>
+            numbers = (<em id="variable-value">1</em><em id="keyword">,</em> <em id="variable-value">2</em><em id="keyword">,</em> <em id="variable-value">3</em>)</pre>
+        </code>
+                <p>And to access the 'methods' available for 'tuples', we use the 'dot' notation. Note that are several
+                    'methods' that were available to 'list', but they are not available for 'tuples', like '.append()',
+                    '.insert()', '.remove()', '.clear()' and '.pop()', so we can not add or remove any of the items in a
+                    'tuple'.</p>
+                <p>We can not change a 'tuple', we can only get information about it, using one of the two 'methods':</p>
+                <ul>
+                    <li>'.count(self, x)': use to count the number of occurrences in an item.</li>
+                    <li>'.index(self, x, start, end)': use to find the index of the first occurrences of an item.</li>
+                </ul>
+                <p>Note that using the 'dot' notation to access the 'methods', we can also see other 'methods' that start
+                    with two underscores ('__'), we refer to these as 'magic methods'.</p>
+                <p>Similar to lists, we can access individual items, using square brackets. As an example, we can get the
+                    first item like this:</p>
+                <code><pre>
+            <em id="built-in-function">print</em>(numbers[<em id="variable-value">1</em>])</pre>
+        </code>
+                <p>As final notes, if we try to assing a new item to a 'tuple', using in this case 'numbers[0] = 10', we
+                    will obtain an error message saying ' 'tuple' object does not support item assignment '.</p>
+            </section>
+            <section class="main-section" id="unpacking">
+                <header>Unpacking</header>
+                <p>'Unpacking' is one of the powerful features that Python has. Let us suppose we have this 'tuple':</p>
+                <code><pre>
+            coordinates = (<em id="variable-value">1</em><em id="keyword">,</em> <em id="variable-value">2</em><em id="keyword">,</em> <em id="variable-value">3</em>)</pre>
+        </code>
+                <p>Imagine that '(1, 2, 3)', represents the coordinates '(x, y, z)'. Now lets say we want to use this values
+                    in a few complex expressions in our program. Maybe we want to include them as part of a large complex
+                    formula. So we would have to write code like this:</p>
+                <code><pre>
+            result = coordinates[<em id="variable-value">0</em>] * coordinates[<em id="variable-value">1</em>] * coordinates[<em id="variable-value">2</em>]</pre>
+        </code>
+                <p>As we can see in this sort example, our code is getting to long. But let us say we want to use these
+                    values in quite a few places in our program, so a better approach is to get these values and store them
+                    in separate variables, that we can get, like this:</p>
+                <code><pre>
+            x = coordinates[<em id="variable-value">0</em>]
+            y = coordinates[<em id="variable-value">1</em>]
+            z = coordinates[<em id="variable-value">2</em>]
+            
+            result = x * y * z</pre>
+        </code>
+                <p>But in Python we can achieve the same result with far less code. So we can define our variables and set
+                    them to a 'tuple':</p>
+                <code><pre>
+            coordinates = (<em id="variable-value">1</em><em id="keyword">,</em> <em id="variable-value">2</em><em id="keyword">,</em> <em id="variable-value">3</em>)
+            x<em id="keyword">,</em> y<em id="keyword">,</em> z = coordinates</pre>
+        </code>
+                <p>When Python interpreter see the code above, it will get the first item of the 'tuple' ('1'), and assign
+                    it to the first variable ('x'). Then it will get the second item of the 'tuple' ('2'), and assign it to
+                    the second variable ('y'). And similarly, it will get the third item of the 'tuple' ('3'), and assign it
+                    to the third variable ('z'). So, we are 'unpaking' this 'tuple' into 3 variables 'x', 'y' and 'z'. So if
+                    we print each 'x', 'y' or 'z', we will see '1', '2' or '3' in the terminal.</p>
+                <p>'Unpacking' is not limited to 'tuples', we can also use this feature for lists as well:</p>
+                <code><pre>
+            coordinates = [<em id="variable-value">1</em><em id="keyword">,</em> <em id="variable-value">2</em><em id="keyword">,</em> <em id="variable-value">3</em>]
+            x<em id="keyword">,</em> y<em id="keyword">,</em> z = coordinates</pre>
+        </code>
+                <p>In this code, we changed '( )' to '[ ]', and by doing this, we have change 'coordinates' from a 'tuple'
+                    to a 'list', so we can also 'unpack' our list into 3 variables as we did it for 'tuples'.</p>
+            </section>
+            <section class="main-section" id="dictionaries">
+                <header>Dictionaries</header>
+                <p>We use 'dictionaries' in situation where we want to store information that comes as a 'key value pairs'.
+                </p>
+                <p>Let think in a customer, for example. A customer has a bunch of attributes like name, email, phone
+                    number, address and so on. Each of these attributes has a value:</p>
+                <ul>
+                    <li>Name: John Smith</li>
+                    <li>Email: john@gmail.com</li>
+                    <li>Phone: 1234</li>
+                </ul>
+                <p>This is what we call 'key value pairs', where 'Name', 'Email' and 'Phone' are the 'keys' and each 'key'
+                    is associated with a value, 'John Smith', 'john@gmail.com' and '1234'.</p>
+                <p>So this is where we use a 'dictionary'. With a 'dictionary' we can store a bunch of 'key value pairs'. So
+                    let us see, how we can define a dictionary in Python.</p>
+                <p>First we define a variable 'customer' and we set it to curly braces '{ }'. With these curly braces, we
+                    can define a 'dictionary', by seting 'key value pairs', inside the curly braces:</p>
+                <code><pre>
+            customer = {
+                <em id="argument">'name'</em>: <em id="argument">'John Smith'</em><em id="keyword">,</em>
+                <em id="argument">'age'</em>: <em id="variable-value">40</em><em id="keyword">,</em>
+                <em id="argument">'is_verified'</em>: <em id="keyword">True</em>
+            }</pre>
+        </code>
+                <p>Note that:</p>
+                <ul>
+                    <li>Each 'key value pairs' is separated with a ','.</li>
+                    <li>'Keys' should be unique in a 'dictionary', just like in a real dictionary, where each word is only
+                        listed once. It is not allowed to have two or more 'keys' with the same name.</li>
+                    <li>'keys' can be strings or numbers.</li>
+                    <li>The 'values' of the 'keys' can be anything, a string, a number, a boolean, a list, and so on.</li>
+                </ul>
+                <p>Now we can access each item of this 'dictionary' using square brackets, like this:</p>
+                <code><pre>
+            <em id="built-in-function">print</em>(customer[<em id="argument">'name'</em>])</pre>
+        </code>
+                <p>In this code, we specified a 'key' and this returned the value associated with that 'key', in this case,
+                    it returned 'John Smith'.</p>
+                <p>Note that, if we specify a 'key', for example 'birthdate', that has no associated value to it, we will
+                    get an error message, because we do not have a 'key' called 'birthdate'. We will also get an error
+                    message if we use un upper case to call a 'key', that is not define with a capital letter, for expample
+                    'Name'. This happens, because Python is a case sensitive language.</p>
+                <p>To avoid getting an error message, we can use the 'get method':</p>
+                <code><pre>
+            <em id="built-in-function">print</em>(customer.get(<em id="argument">'name'</em>))</pre>
+        </code>
+                <p>Using the 'get' method, we assure that we receive the 'value' associated with the 'key', in this case
+                    'John Smith', or if the 'key' does not exist, we receive 'None' on the 'Terminal', but we will never
+                    receive an error message. Remember that 'None' is an 'object' that represents the absence of a value. We
+                    can also supply a 'default value' in case the 'dictionary' does not have the 'key' we are asking, like
+                    this:</p>
+                <code><pre>
+            <em id="built-in-function">print</em>(customer.get(<em id="argument">'birthdate'</em><em id="keyword">,</em> <em id="argument">'Jan 16, 1975'</em>))</pre>
+        </code>
+                <p>With theis line of code, instead of getting 'None' on the terminal, because 'birthdate' does not exist,
+                    we will get 'Jan 16, 1975'.</p>
+                <p>Similarly with lists, we can also update a 'dictionary' value:</p>
+                <code><pre>
+            customer[<em id="argument">'name'</em>] = <em id="argument">'Jack Smith'</em>
+            <em id="built-in-function">print</em>(customer[<em id="argument">'name'</em>])</pre>
+        </code>
+                <p>Or we can add a new 'key' to a 'dictionary':</p>
+                <code><pre>
+            customer[<em id="argument">'birthdate'</em>] = <em id="argument">'Jan 16, 1975'</em>
+            <em id="argument">print</em>(customer[<em id="argument">'birthdate'</em>])</pre>
+        </code>
+                <p>Let us see a more complex example, where a program asks for our phone number and then it take those
+                    numbers and translate then to words:</p>
+                <code><pre>
+            phone = <em id="built-in-function">input</em>(<em id="argument">'Phone: '</em>)
+            digits_mapping = {
+                <em id="argument">'1'</em>: <em id="argument">'one'</em><em id="keyword">,</em>
+                <em id="argument">'2'</em>: <em id="argument">'two'</em><em id="keyword">,</em>
+                <em id="argument">'3'</em>: <em id="argument">'three'</em><em id="keyword">,</em>
+                <em id="argument">'4'</em>: <em id="argument">'four'</em>
+            }
+            
+            output = <em id="argument">''</em>
+            
+            <em id="keyword">for</em> number <em id="keyword">in</em> phone:
+                output += digits_mapping.get(number, <em id="argument">'!'</em>) + <em id="argument">''</em>
+            <em id="built-in-function">print</em>(output)</pre>
+        </code>
+                <p>On this code, first we get the user phone number and store it on a variable called 'phone'. After we need
+                    to check each charater that the user has entered, and translate that character using a 'dictionary',
+                    because a 'dictionary' is a struture that allow us to map a 'key' to a 'value'.</p>
+                <p>Now we need to loop through the phone string. For that we can use '[ ]' or the 'get' method. By using the
+                    'get' method, we can define an error message, in case the user introduce a 'key' that do not exist.</p>
+                <p>After we need to add 'value' corresponding to the 'key', and store it on an empty string.</p>
+                <p>In each iteration we get the result and add it to our 'output' string. The '+ '' ' in the end, represents
+                    a space so the 'one', 'two' and so on, are not close to each other.</p>
+            </section>
+            <section class="main-section" id="functions">
+                <header>Functions</header>
+                <p>'Functions' are use to store blocks of code. As our programs grow, we need a better way to organize our
+                    code. We need to break our code into smaller, more manageable and more maintainable chunks which we call
+                    'functions'.</p>
+                <p>So a 'function' is a container with a few lines of code that perform a specific task. For example, we saw
+                    a few built in functions like 'print()', 'input()', and each of this functions have a purpose, they know
+                    how to perform a specific task.</p>
+                <p>So when building large complex programs, we should break up our code into more smaller and reusable
+                    chunks which we call 'functions' to better organize our code.</p>
+                <p>Let us built a program for printing a greeting message:</p>
+                <code><pre>
+            <em id="keyword">def</em> <em id="new-function">greet_user</em>():
+                <em id="built-in-function">print</em>(<em id="argument">'Hi there!'</em>)
+                <em id="built-in-function">print</em>(<em id="argument">'Welcome aboard.'</em>)
+                
+            <em id="built-in-function">print</em>(<em id="argument">'Start'</em>)
+            greet_user()
+            <em id="built-in-function">print</em>(<em id="argument">'Finish'</em>)</pre>
+        </code>
+                <p>In this code, 'def' is a reserve word in Python, and is short for define. When Python inerpreter sees
+                    this, it knows that we are defining a 'function'.</p>
+                <p>Next we need to give our 'function' a name, 'greet_user', and by using ' : ' on the end of 'def
+                    greet_user():' we are saying to Python that we are defining a block of code. Any code writen inside this
+                    'function', belongs to this 'functions' and will be executed whenever we call this 'function'.</p>
+                <p>In the program above, the execution of our program starts in 'print('Start')', after that Python sees
+                    that we are calling the 'greet function', it will jump to the top of our program were we have define the
+                    'greet_user' function and will execute the two lines of code inside the function, then it will jump out
+                    of this 'function' and continue the normal execution of our code, so it will print the 'Finish' message
+                    on the terminal.</p>
+                <p>To define a function remember that:</p>
+                <ul>
+                    <li>All the best practices seen so far regarding to naming variables, also apply to functions.</li>
+                    <li>'Functions' names should always be meaningful and descriptive.</li>
+                    <li>For naming a 'functions', we should use lower case characters.</li>
+                    <li>If the name of the 'function' has multiple words, we need to separate them using an underscore ( '_'
+                        ).</li>
+                    <li>The order of the code matters, meaning that if we try to call a 'function' and only after we define
+                        that same 'function', we will see an error. So we always define our functions first and then call
+                        them.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="parameters">
+                <header>Parameters</header>
+                <p>'Parameters' are used to pass information to 'functions'. Let us see how we can pass a parameter to the
+                    'greet_user' function that we have defined:</p>
+                <code><pre>
+            <em id="built-in-function">def</em> <em id="new-function">greet_user</em>(name):
+                <em id="built-in-function">print</em>(<em id="argument">f'Hi</em> <em id="keyword">{</em>name<em id="keyword">}</em><em id="argument">!'</em>)
+                <em id="built-in-function">print</em>(<em id="argument">'Welcome aboard.'</em>)
+            
+            <em id="built-in-function">print</em>(<em id="argument">'Start'</em>)
+            greet_user(<em id="argument">'John'</em>)
+            <em id="built-in-function">print</em>(<em id="argument">'Finish'</em>)</pre>
+        </code>
+                <p>In this code, we set a parameter for our 'greet_user()' function, inside '( )'. These parameters are
+                    place holders for receiving information, in this case 'name'. With this, we can pass the name of the
+                    user, when calling this function.</p>
+                <p>In our case the parameter has set to 'John', so 'name' will act like a local variable that we defined
+                    inside of this function and that can receive information. When a function has a parameter, in this case
+                    'name', we are obligated to pass a value for that parameter, otherwise we will get an error message
+                    saying 'missing 1 required positional argument'.</p>
+                <p>An important note is that 'parameters' and 'place holder' are not the same thing. 'Parameters' are the
+                    'holes' or 'placeholders' that we define in our function for receiving information ('name'), and
+                    'arguments' are the actual pieces of information that we supply to these functions ('John').</p>
+                <p>We can also define multiple 'parameters' like this:</p>
+                <code><pre>
+            <em id="built-in-function">def</em> <em id="new-function">greet_user</em>(first_name<em id="keyword">,</em> last_name):
+                <em id="built-in-function">print</em>(<em id="argument">f'Hi</em> <em id="keyword">{</em>first_name<em id="keyword">}</em> <em id="keyword">{</em>last_name<em id="keyword">}</em><em id="argument">!'</em>)
+                <em id="built-in-function">print</em>(<em id="argument">'Welcome aboard.'</em>)
+            
+            <em id="built-in-function">print</em>(<em id="argument">'Start'</em>)
+            greet_user(<em id="argument">'John'</em><em id="keyword">,</em> <em id="argument">'Smith'</em>)
+            <em id="built-in-function">print</em>(<em id="argument">'Finish'</em>)</pre>
+        </code>
+            </section>
+            <section class="main-section" id="keyword_arguments">
+                <header>Keyword Arguments</header>
+                <p>We have 'positional arguments' and 'keyword arguments'. In the first case the position of the aruments
+                    that we set in a function matter, and in 'keyword arguments' the position does not matter.</p>
+                <code><pre>
+            <em id="built-in-function">def</em> <em id="new-function">greet_user</em>(first_name<em id="keyword">,</em> last_name):
+                <em id="built-in-function">print</em>(<em id="argument">f'Hi</em> <em id="keyword">{</em>first_name<em id="keyword">}</em> <em id="keyword">{</em>last_name<em id="keyword">}</em><em id="argument">!'</em>)
+                <em id="built-in-function">print</em>(<em id="argument">'Welcome aboard.'</em>)
+
+            <em id="built-in-function">print</em>(<em id="argument">'Start'</em>)
+            greet_user(<em id="argument">'John'</em><em id="keyword">,</em> <em id="argument">'Smith'</em>)
+            <em id="built-in-function">print</em>(<em id="argument">'Finish'</em>)</pre>
+        </code>
+                <p>In the code above, the position in which we set the arguments that we pass to our 'greet_user' function
+                    matter. We would get different results if we set 'greet_user('John', 'Smith')' or 'greet_user('Smith',
+                    'John')'. In the first case 'John' parameter will be set in the placeholder 'first_name' and 'Smith'
+                    parameter will be set in the placeholder 'last_name', and in the second case it would be set vice-versa.
+                    That is why these are called 'positional arguments'.</p>
+                <p>With 'keyword arguments' we can set the placeholders as we want regardless the order in each we provide
+                    them. Here is how:</p>
+                <code><pre>
+            <em id="built-in-function">def</em> <em id="new-function">greet_user</em>(first_name<em id="keyword">,</em> last_name):
+                <em id="built-in-function">print</em>(<em id="argument">f'Hi</em> <em id="keyword">{</em>first_name<em id="keyword">}</em> <em id="keyword">{</em>last_name<em id="keyword">}</em><em id="argument">!'</em>)
+                <em id="built-in-function">print</em>(<em id="argument">'Welcome aboard.'</em>)
+            
+            <em id="built-in-function">print</em>(<em id="argument">'Start'</em>)
+            greet_user(<em id="key-argument">last_name</em>=<em id="argument">'Smith'</em><em id="keyword">,</em> <em id="key-argument">first_name</em>=<em id="argument">'John'</em>)
+            <em id="built-in-function">print</em>(<em id="argument">'Finish'</em>)</pre>
+        </code>
+                <p>When we have a parameter name ('first_name') followed by its 'value' ('John'), that is what we call a
+                    'keyword argument'. And with this 'keyword arguments' the position does not matter, we do not have to
+                    care about the position.</p>
+                <p>Note that, most of the time, we use 'positional arguments' and not 'keyword arguments', but in certain
+                    situation, these 'keyword arguments' can help us improve the readability of our code. In the example
+                    used above, is easy to guess what the arguments represent, but sometimes we are dealing with functions
+                    and we are passing numerical values to them, in those situations it may not be quite clear what those
+                    values represent.</p>
+                <p>Let us see an example. Suppose we have a function to calculate the total cost of an order:</p>
+                <code><pre>
+            <em id="built-in-function">def</em> <em id="new-function">calc_cost</em>(total<em id="keyword">,</em> discount<em id="keyword">,</em> shipping):
+                <em id="keyword">return</em> (total * (<em id="variable-value">1</em> - discount) + shipping)
+            
+            
+            total_cost = calc_cost(<em id="key-argument">total</em>=<em id="variable-value">100</em><em id="keyword">,</em> <em id="key-argument">discount</em>=<em id="variable-value">0.1</em><em id="keyword">,</em> <em id="key-argument">shipping</em>=<em id="variable-value">5</em>)
+            <em id="built-in-function">print</em>(<em id="argument">f'Total cost of the order: $</em><em id="keyword">{</em>total_cost<em id="keyword">}</em><em id="argument">'</em>)</pre>
+        </code>
+                <p>In this code, the first number we supply to our 'calc_cost()' function, represents the 'total' ('100'),
+                    the other is the is the 'discount' ('0.1') and the last one is the 'shipping cost' ('5').</p>
+                <p>As we see, someone reading this code may not know what these values represents, and in this case, we can
+                    improve the readability of this code, by using 'keyword arguments'. So we can prefix each argument with
+                    the name of the parameter they target, for example, we can set 'total=100', 'discount=0.1' and
+                    'shipping=5'. Like this if someone else was reading this code, they could immediatelly tell, what these
+                    values represent. So that is the power of 'keyword arguments'.</p>
+                <p>'Keyword arguments' should always come after 'positional arguments'. If we are mixing 'positional
+                    arguments' with 'keyword arguments', we should always use 'positional arguments' first and then the
+                    'keyword arguments'.</p>
+                <p>As final notes keep in mind:</p>
+                <ul>
+                    <li>For most part we should use 'positional arguments', but if we are dealing with functions that take
+                        numerical values, and is not quite clear what does values represent, we should use 'keyword
+                        arguments', to improve the readability of our code.</li>
+                    <li>To use 'keyword arguments', simply prefix the arguments that we pass with the name of their pair
+                        parameters.</li>
+                    <li>Finally if we are using both 'positional arguments' and 'keyword arguments', we should use 'keyword
+                        arguments' after the 'positional arguments'.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="return_statement">
+                <header>Return Statement</header>
+                <p>'Return Statements' are functions that return values. This is particularly useful, if we are doing some
+                    kind of calculation and we want to return the result, to whoever is using the function.</p>
+                <p>Let us try to build a function, that calculates the square of a number introduced by the user:</p>
+                <code><pre>
+            <em id="keyword">def</em> <em id="new-function">square</em>(number):
+                <em id="keyword">return</em> (number * number)
+            
+            result = square(<em id="variable-value">3</em>)
+            <em id="built-in-function">print</em>(result)</pre>
+        </code>
+                <p>In this code, first we define a function ('square') and we set the parameters ('number'). Inside the
+                    function we introduce the calculation formula ('number * number'). Now to return the value outside the
+                    function, we use the 'return' statement ('return number * number'). After we call the function and give
+                    it an argument of '3' ('square(3)'), now this functions returns a value, that we can store it in a
+                    variable ('result') and print it on the terminal.</p>
+                <p>The code above, could be rewriten in a shorter way:</p>
+                <code><pre>
+            <em id="keyword">def</em> <em id="new-function">square</em>(number):
+                <em id="keyword">return</em> (number * number)
+            
+            <em id="built-in-function">print</em>(square(<em id="argument">3</em>))</pre>
+        </code>
+                <p>As we can see, this was a very simple program, but in real programs, we might have functions with several
+                    lines of code, to calculate something. So in does cases in particular, the 'return' statement is very
+                    valuable. The 'return' statement allow us to return values to the callers of our function.</p>
+                <p>On the code above, if we did not use the 'return' statement, like this:</p>
+                <code><pre>
+            <em id="keyword">def</em> <em id="new-function">square</em>(number):
+                <em id="built-in-function">print</em>(number * number)
+            
+            <em id="built-in-function">print</em>(square(<em id="variable-value">3</em>))</pre>
+        </code>
+                <p>Besides having '9' (square of '3'), we would also see 'None' on the terminal.</p>
+                <p>When Python interpreter executes this code, first it will call the 'square()' function. So the control
+                    moves to the 'square' function, and there it will calculate the 'square' of the given number ('3'), and
+                    then it will print it on the terminal. That is why we see '9' on the terminal.</p>
+                <p>We will also see 'None' on the terminal, because by default, all the functions return the value 'None',
+                    if they do not have the 'return' statement inside the 'def' block of code. 'None' is an object that
+                    represents the absence of a value, it is like nothing, or 'null' in C, C++, JAVA and JAVAScript.</p>
+                <p>On the example above, we did not have a 'return' statement, so by default, Python returned the value
+                    'None' from this function. After the 'square(3)' function is executed, the value 'None' is returned, and
+                    passed as an argument to the 'print' function ('print(square(3))'). That is the reason, why we see
+                    'None' on the second line in the terminal.</p>
+                <p>As a final note, we should now that by default, all functions in Python return 'None' and that we can
+                    change this, by using the 'return' statement. With this we will receive the result of a function.</p>
+            </section>
+            <section class="main-section" id="reusable_functions">
+                <header>Reusable Functions</header>
+                <p>'Reusable functions' are functions that we use recurrently.</p>
+                <p>In 'reusable functions' we do not use the 'input()' function, because inputs can come in different froms.
+                    We do not want to put 'input()' in functions code, because they could not be reusable.</p>
+                <p>By the same principal, we should not include 'print()' functions in our 'def' function code, because what
+                    we do with the output is different from one program to another.</p>
+                <p>To define 'reusable functions' bare in mind:</p>
+                <ul>
+                    <li>Use 'def' and chose a name that clearly tells what the functions does.</li>
+                    <li>Use the 'return' statement to obtain the output of a function.</li>
+                    <li>Each function should execute one, and only one function and the task should be clearly explain in
+                        the name of the function.</li>
+                    <li>Do not use 'input()' or 'print()' functions. In the first case, inputs can come in very different
+                        froms and in the second case, what we do with the outputs is different from one program to another.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="exception_handling">
+                <header>Exception Handling</header>
+                <p>'Exceptions' or logical errors (Python Logical Errors), occur at runtime, after the program pass the
+                    syntax test. When an error occurs, or exception as we call it, Python will normally stop and generate an
+                    error message. But these exceptions can be handled, using the 'try / except' statement to deal with
+                    error in our programs. Let us try to see an example where we get the user age from the terminal:</p>
+                <code><pre>
+            age = <em id="built-in-function">int</em>(<em id="built-in-function">input</em>(<em id="variable-value">'Age: '</em>))
+            <em id="built-in-function">print</em>(age)</pre>
+        </code>
+                <p>In this code, we call the 'input()' function, add a lable ('Age: ') and when the user introduce
+                    something, this function returns a string. So we need to transform this string into an integer
+                    ('int(input('Age: '))') and then store the result in a variable ('age'). After we print the result in
+                    the terminal ('print(age)').</p>
+                <p>Note that after executing the code above, and if we write a numeric value, the result printed on the
+                    terminal, will be the number we entered, but we will also see a message saying 'Process finish with exit
+                    code 0'. What this means, is that our program terminated successfully, there where no errors.</p>
+                <p>But if instead of entering a numeric value, we enter something like a string ('asd' for example), in this
+                    case, we would obtain a 'ValueError' saying 'invalid literal for int() with base 10: 'asd' '. Basically
+                    what this message is telling us, is that this string 'asd', does not contain a valid number, that can be
+                    converted to an integer.</p>
+                <p>Notice on the terminal, that there is also an exit code saying 'Process finish with exit code 1'. Exit
+                    code '1' means our program crashed. So exit code '0' always means success, and anything but '0' means
+                    crashed.</p>
+                <p>Now, as a good programmer we should anticipate this situations. We do not want to let our entire program
+                    crash, just because the user entered an invalid value/input.</p>
+                <p>So instead of letting the program crash, we should handle the situation and print a proper error message.
+                    For that, we should always see the type of error the program returns, in this case 'ValueError'.</p>
+                <p>For handle errors, Python has a constructer called 'try except':</p>
+                <code><pre>
+            <em id="keyword">try:</em>
+                age = <em id="built-in-function">int</em>(<em id="built-in-function">input</em>(<em id="argument">'Age: '</em>))
+                <em id="built-in-function">print</em>(age)
+            
+            <em id="keyword">except</em> <em id="built-in-function">ValueError</em>:
+                <em id="built-in-function">print</em>(<em id="argument">'Invalid value'</em>)</pre>
+        </code>
+                <p>In this code, in the 'except' block, we type the type of error our program may encounter, in this case a
+                    'ValueError', and inside, we define what should happen if our program encounters that type of error. In
+                    our case, we want to print a proper error message on the terminal.</p>
+                <p>So with this 'try / except' statement, we are telling Python to execute the 'try' block, and if it
+                    encounter an error of 'ValueError', then instead of craching the program, it will print the error
+                    message defined 'Invalid value', and the exit message will state 'Process finished with exit code 0',
+                    meaning our program completed successfully, it did not crash.</p>
+                <p>This will only be true for 'ValueError' type. To other type of errors our program will crash. So let us
+                    see another example, for handeling with another type of errors/exceptions:</p>
+                <code><pre>
+            <em id="keyword">try</em>:
+                age = <em id="built-in-function">int</em>(<em id="built-in-function">input</em>(<em id="argument">'Age: '</em>))
+                income = <em id="argument">20000</em>
+                risk = income / age
+                <em id="built-in-function">print</em>(age)
+            
+            <em id="keyword">except</em> <em id="built-in-function">ValueError</em>:
+                <em id="built-in-function">print</em>(<em id="argument">'Invalid value'</em>)</pre>
+        </code>
+                <p>If we run this program and if we set 'age' to '0', that represents a numerical value, our program will
+                    crash once again with the error 'ZeroDivisionError: division by zero' and this happened because we can
+                    not divide a number by '0'. On the exit code we will get 'Process finished with exit code 1'.</p>
+                <p>This happens, because we could not catch this type of error/exception 'ZeroDivisionError' with the
+                    existent 'except' block. The existing block, is only capable of catching errors of type 'ValueError'. So
+                    in situations like this, we should handle different kinds of exceptions, adding new 'except statements':
+                </p>
+                <code><pre>
+            <em id="keyword">try</em>:
+                age = <em id="built-in-function">int</em>(<em id="built-in-function">input</em>(<em id="argument">'Age: '</em>))
+                income = <em id="variable-value">20000</em>
+                risk = income / age
+                <em id="built-in-function">print</em>(age)
+            
+            <em id="keyword">except</em> <em id="built-in-function">ZeroDivisionError</em>:
+                <em id="built-in-function">print</em>(<em id="argument">'Age can not be 0'</em>)
+            
+            <em id="keyword">except</em> <em id="built-in-function">ValueError</em>:
+                <em id="built-in-function">print</em>(<em id="argument">'Invalid value'</em>)</pre>
+        </code>
+                <p>Now, if we set 'age' to '0', we will receive a message saying 'Age can not be 0', and the exit message
+                    will state 'Process finished with exit code 0', meaning our program completed successfully, it did not
+                    crash.</p>
+                <p>So in resume:</p>
+                <ul>
+                    <li>We use 'try /except' blocks to handle 'exceptions' raised in our program.</li>
+                    <li>As a good programmer, we should always anticipate these kind of 'exceptions' and handle them
+                        properly.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="comments">
+                <header>Comments</header>
+                <p>'Comments' are used to add notes or comments to our programs. To insert a comment we use '#' and whatever
+                    we type after '#' will not be executed. Each line in where we need to add a 'comment', should start with
+                    '#'. Here is an example:</p>
+                <code><pre>
+            <em id="comments"># This is a comment and will not be executed</em>
+            
+            <em id="built-in-function">print</em>(<em id="argument">'Hello World'</em>)</pre>
+        </code>
+                <p>In this code, and after we run our program, we will see on the terminal the 'Hello World' message. The
+                    rest of the code will not be executed.</p>
+                <p>Good uses cases for 'comments':</p>
+                <ul>
+                    <li>Communicate something about our code.</li>
+                    <li>Communicate things with other developers reading our code.</li>
+                    <li>Reminders to fix things or clear things up.</li>
+                    <li>If we have made assumptions.</li>
+                </ul>
+                <p>Bad uses cases for 'comments':</p>
+                <ul>
+                    <li>Explain what the code does, explaining what the code should explain by itself.</li>
+                    <li>Explaining the obvious, which will make our code repetitive, and it will easily become outdated,
+                        especially if we change our code and forget to change the 'comment'.</li>
+                    <li>To much 'comments' will make code more difficult to read and understand, it will create noise on our
+                        code.</li>
+                </ul>
+                <p>As a final note, we should use 'comments' to explain 'whys' and 'hows' not 'whats'.</p>
+            </section>
+            <section class="main-section" id="classes">
+                <header>Classes</header>
+                <p>'Classes' are very important in programming and they are not specific to Python, a lot of other
+                    programming languages support the notion of 'classes'. We use 'classes' to define new types.</p>
+                <p>So far we have seen examples about basic or simple types in Python (numbers, strings and booleans), and a
+                    couple of complex types (lists and dictionaries). While these types are extremely useful, they can not
+                    always be used to model complex concepts.</p>
+                <p>For example, if we think in a 'point', it is not a boolean, is not a list, is not a dictionary, it is a
+                    different kind thing. So we can use 'classes' to define new types to model real concepts. Let us see an
+                    example, where we define a new type called 'point', and this new type is going to have methods for
+                    working with 'points':</p>
+                <code><pre>
+            <em id="keyword">class</em> Point:
+                <em id="keyword">def</em> move(<em id="self-operator">self</em>):
+                <em id="built-in-function">print</em>(<em id="argument">'move'</em>)
+            
+            <em id="keyword">def</em> draw(<em id="self-operator">self</em>):
+                <em id="built-in-function">print</em>(<em id="argument">'draw'</em>)
+            
+            
+            point1 = Point()
+            point1.draw()</pre>
+        </code>
+                <p>In this code, we start by defining a 'class', by using the 'class' keyword, and right after we give our
+                    'class' a name ('Points'). And inside our 'class Points' block, we use 'def' keyword, to define all the
+                    functions or methods that belong to 'Points' ('move' and 'draw'). After defining a 'class' we should set
+                    two line brakes.</p>
+                <p>With these methods created, we can create new objects. Remember, that an object is an instance of a
+                    class. A 'class' simply define a blueprint or a template for creating objects, and objects are the
+                    actual instances based on that blueprint.</p>
+                <p>So we can have ten or hundreds of points on the screen, these are the objects or the instances. Let us
+                    create an object. For that, we type the name of our 'class' and then call it like a function
+                    ('Points()'), and this will creates a new object. After, we can store that object in a variable ('point1
+                    = Points()').</p>
+                <p>Now, when we use the 'dot' operator, we can access the methods define in the 'class', 'point1.move()',
+                    'point1.draw()' and other called 'magic methods'. In the example above, 'point1.draw()', will return on
+                    the terminal the result 'draw'.</p>
+                <p>Apart 'methods', we can also define attributes to our 'classes', and this attributes are like variables
+                    that belong to a particular object. Let us rewrite and upgrade the example above:</p>
+                <code><pre>
+            <em id="keyword">class</em> Point:
+                <em id="keyword">def</em> move(<em id="self-operator">self</em>):
+                    <em id="built-in-function">print</em>(<em id="argument">'move'</em>)
+            
+                <em id="keyword">def</em> draw(<em id="self-operator">self</em>):
+                    <em id="built-in-function">print</em>(<em id="argument">'draw'</em>)
+            
+            
+            point1 = Point()
+            point1.x = <em id="variable-value">10</em>
+            point1.y = <em id="variable-value">20</em>
+            <em id="built-in-function">print</em>(point1.x)
+            point1.draw()</pre>
+        </code>
+                <p>If we run the code above, we will see on the terminal the result '10' and 'draw'. In this case, 'point1.x
+                    = 10' and 'point1.y = 20' are attributes. Let us create another object:</p>
+                <code><pre>
+            <em id="keyword">class</em> Point:
+                <em id="keyword">def</em> move(<em id="self-operator">self</em>):
+                    <em id="built-in-function">print</em>(<em id="argument">'move'</em>)
+            
+                <em id="keyword">def</em> draw(<em id="self-operator">self</em>):
+                    <em id="built-in-function">print</em>(<em id="argument">'draw'</em>)
+            
+            
+            point1 = Point()
+            point1.draw()
+            
+            point2 = Point()</pre>
+        </code>
+                <p>In this example, 'point1' and 'point2', are two different objects. So each object is an instance of our
+                    'Points' class.</p>
+                <p>Note that, the name of the class starts with an upper case letter, because of the 'Pascal Naming
+                    Convention'. The convention we use to name our classes, is different from the name we use to name our
+                    'variables' and 'functions'. For 'variables' and 'functions' we always used lower case letters and we
+                    separate multiple words using an underscore ('_'). But when naming classes, we do not use an underscore
+                    to separate multiple words, instead we capitalize the first letter of every word (as an example 'class
+                    EmailClient').</p>
+                <p>So in resume, we use 'classes' to define new types, these new types can have methods that we define in
+                    the body of the 'class' and they can also have attributes that we can set anywhere in our programs.</p>
+            </section>
+            <section class="main-section" id="constructors">
+                <header>Constructors</header>
+                <p>A 'constructor' is a function that gets called at the time of creating an object.</p>
+                <p>In the example given in 'Classes', we created a new type ('Points'). But in that example, we have a tiny
+                    implementation problem, because we can create a point object, without an 'x' or 'y' coordinates, and
+                    that does not really make sense, because whenever we talk about a point, we need to know where that
+                    point is located. To solve this problem, we use a 'constructors' like this:</p>
+                <code><pre>
+            <em id="keyword">class</em> Point:
+                <em id="keyword">def</em> <em id="init-function">__init__</em>(<em id="self-operator">self</em><em id="keyword">,</em> x<em id="keyword">,</em> y):
+                    <em id="self-operator">self</em>.x = x
+                    <em id="self-operator">self</em>.y = y
+            
+                <em id="keyword">def</em> move(self):
+                    <em id="built-in-function">print</em>('move')
+            
+                <em id="keyword">def</em> draw(self):
+                    <em id="built-in-function">print</em>('draw')
+            
+            
+            point = Point(<em id="variable-value">10</em><em id="keyword">,</em> <em id="variable-value">20</em>)
+            <em id="built-in-function">print</em>(point.x)</pre>
+        </code>
+                <p>In the code above, we add to it a special method, called constructor ('__init__(self)').</p>
+                <p>'init' is short for initialized and this is the method that gets called each time we create a new point
+                    object. After 'self' we add to extra parameters 'x' and 'y', and in the body of our method ('__init__')
+                    we should pass the values of our parameters 'x' and 'y', and use them to initialize our object, so when
+                    we pass the arguments '10' and '20' in 'point = Point(10, 20)', these arguments will be used for 'x' and
+                    'y' parameters in 'def __init__(self, x, y)'.</p>
+                <p>To initialize our object we type 'self.x = x' and 'self.y = y'. Note that the 'self' in '__init__(self,
+                    x, y)', is a reference to the current object, in this case, 'self' refers to 'Point(10, 20)'.</p>
+                <p>When we create a new object, 'self' references that object in memory, the same object, that we are
+                    refering using the variable 'point'. So using the '__init__' method we can initialize our objects and we
+                    refer to this method as a 'constructor'. This method is use to 'construct' or 'create' an object. So in
+                    our example, we have created a point object with the values of '10' and '20'.</p>
+                <p>We can also change the values of our coordinates. Suppose we want to change our coordinate 'x' from '10'
+                    to '11':</p>
+                <code><pre>
+            <em id="keyword">class</em> Point:
+                <em id="keyword">def</em> <em id="init-function">__init__</em>(<em id="self-operator">self</em><em id="keyword">,</em> x<em id="em_code_keyword">,</em> y):
+                    ...
+            
+                <em id="keyword">def</em> move(<em id="self-operator">self</em>):
+                    ...
+            
+                <em id="keyword">def</em> draw(<em id="self-operator">self</em>):
+                    ...
+            
+            
+            point = Point(<em id="variable-value">10</em><em id="keyword">,</em> <em id="variable-value">20</em>)
+            point.x = <em id="variable-value">11</em>
+            <em id="built-in-function">print</em>(point.x)</pre>
+        </code>
+            </section>
+            <section class="main-section" id="inheritance">
+                <header>Inheritance</header>
+                <p>'Inheritance' is a mechanism for reusing code, and once again, is not limited to Python. Most languages
+                    that support 'classes', also support 'inheritance'. Let us see an example:</p>
+                <code><pre>
+            <em id="keyword">class</em> Mammal:
+                <em id="keyword">def</em> <em id="new-function">walk</em>(<em id="self-operator">self</em>):
+                    <em id="built-in-function">print</em>(<em id="argument">'walk'</em>)
+            
+            
+            <em id="keyword">class</em> Dog(Mammal):
+                <em id="keyword">pass</em>
+
+
+            <em id="keyword">class</em> Cat(Mammal):
+                <em id="keyword">pass</em>
+            
+            dog1 = Dog()
+            dog1.walk()</pre>
+        </code>
+                <p>In the example above, we defined a class called 'Mammal' and inside it, we defined a method ('walk').
+                    Then we have the 'dog' and 'cat' classes 'inherit' the method define in the parent class 'Mammal', just
+                    like humans inherit certain attributes or behaviors from their parents. So, to assure that the 'Dog()'
+                    or 'Cat()' class, inheritance all the 'Mammal()' methods, we write 'Dog(Mammal)' and 'Cat(Mammal)'</p>
+                <p>Note that we put 'pass' inside the 'Dog(Mammal)' and 'Cat(Mammal)', because Python does not like to have
+                    empty classes (without no code inside). It accept that, but it does not like it. Using 'pass' statement
+                    we are telling Python 'Hey, pass this line. Don't worry about it', and like that we do not have an empty
+                    class.</p>
+                <p>After all of these setps, we can create a 'dog' or 'cat' object ('dog1 = Dog()') and we can also access
+                    the methods define in the parents class ('Mammal'), by using the 'dot' notation. So in the terminal we
+                    will see 'walk'.</p>
+                <p>Note that between classes we have two line spaces. If we only had one, we should see a red underline
+                    under 'class', but it will not affetc the behavier of our program, it is just a way that Python was to
+                    complain at us.</p>
+                <p>Despite the methods defined in the parents class, the chidren classes ('Dog('Mammal')' and
+                    'Cat('Mammal')'), can have their one methods, like this:</p>
+                <code><pre>
+            <em id="keyword">class</em> Mammal:
+                ...        
+            
+            
+            <em id="keyword">class</em> Dog(Mammal):
+                <em id="keyword">def</em> <em id="new-function">bark</em>(<em id="self-operator">self</em>):
+                    <em id="built-in-function">print</em>(<em id="argument">'bark'</em>)
+
+
+            <em id="keyword">class</em> Cat(Mammal):
+                <em id="keyword">def</em> <em id="new-function">be_playful</em>(<em id="self-operator">self</em>):
+                    <em id="built-in-function">print</em>(<em id="argument">'playful'</em>)
+            
+            dog1 = Dog()
+            dog1.bark()</pre>
+        </code>
+                <p>So in this code, both 'Dog()' and 'Cat()' classes have inherit the 'walk' method from the parent class,
+                    and each of the children classes ('Dog()' and 'Cat()') have their one specific methods.</p>
+            </section>
+            <section class="main-section" id="modules">
+                <header>Modules</header>
+                <p>A 'module' in Python is basically a file with some Python code. We use 'modules' to organize our code
+                    into multiple files, just like sections in a super market.</p>
+                <p>When we go to a super market there are different sections for fruits, vegetables. cleaning products, and
+                    so on. We do not have only one section with all the products in the super market.</p>
+                <p>We have the same concept in programming. So instead of writing all our code, all our classes and
+                    functions, we want to break up our code into multiple files. We refer to each file as a 'module'. With
+                    this, not only our code is better organized and structured, but we will also have the ability to reuse
+                    our code.</p>
+                <p>As an example, let us suppose, we have two functions to convert 'lbs' into 'kg' and vice-versa
+                    ('lbs_to_kg(weight)' and 'kg_to_lbs(weight)'), inside of a 'module' called 'converter'. After defining
+                    the 'converter' module, let us suppose we want to import that 'module' into a program that needs these
+                    'converter' functions. Let us see how can we do this.</p>
+                <p>In Pycharm (IDE use here), suppose we have a project ('directory') called 'Hello World', and inside that
+                    project, we have a file called 'app.py'. Let us consider that is in this file, that we are writing the
+                    main code of our APP.</p>
+                <p>So to create our 'converter' module, we have to create a new file in our 'Hello World' project. For that:
+                </p>
+                <ul>
+                    <li>In the 'project panel' window of our project, right click above the 'Hello World' directory.</li>
+                    <li>Go to 'New' --&gt 'File' and select a name to that file, for example, 'converters.py'. In this case
+                        we have to explicitly add the extension '.py'. We can also add a new file by going to 'New' --&gt
+                        'Python File', and like this we do not have to specify '.py', PyCharm will automatically do it for
+                        us.</li>
+                    <li>After creating this file, write the following code inside it:</li>
+                    <code id="code_li"><pre>
+            <em id="keyword">def</em> <em id="new-function">lbs_to_kg</em>(weight):
+                <em id="keyword">return</em> weight * <em id="variable-value">0.45</em>
+            
+            <em id="keyword">def</em> <em id="new-function">kg_to_lbs</em>(weight):
+                <em id="keyword">return</em> weight / <em id="variable-value">0.45</em></pre>
+            </code>
+                    <li>Now to import our 'converters.py' module, into our 'apps.py' module, we only need one line of code:
+                    </li>
+                    <code id="code_li"><pre>
+            <em id="keyword">import</em> converters</pre>
+            </code>
+                </ul>
+                <p>Important notes to keep in mind:</p>
+                <ul>
+                    <li>As we write more functions with classes, we should put them in the corresponding 'module'. That
+                        means new files.</li>
+                    <li>'Modules' should contain all the corresponding functions and classes. Like that, we assure that our
+                        code is better organize, easier to read and easier to maintain.</li>
+                    <li>Code should be organize into 'functions', 'classes' and 'modules'.</li>
+                    <li>We do not need to write the extention of the file '.py' to import it, we only need to type the name
+                        of the 'module'.</li>
+                </ul>
+                <p>Now the 'converters module', becomes an object of 'app.py' file, and because of that we can access all
+                    the methods available inside 'conerters module', using the 'dot' operator or pressing 'ctrl + enter' to
+                    access them.</p>
+                <code><pre>
+            <em id="keyword">import</em> converters
+            
+            <em id="built-in-function">print</em>(converters.kg_to_lbs(<em id="variable-value">70</em>))</pre>
+        </code>
+                <p>Instead of importing the entire 'module', we can just import a specific functions of that 'module', like
+                    this:</p>
+                <code><pre>
+            <em id="keyword">from</em> converters <em id="keyword">import</em> kg_to_lbs
+            
+            <em id="built-in-function">print</em>(kg_to_lbs(<em id="variable-value">70</em>))</pre>
+        </code>
+                <p>In the code above, note that we do not need to type 'converters.kg_to_lbs()', we can simply type
+                    'kg_to_lbs(70)'.</p>
+                <p>So, on the first process 'converters.kg_to_lbs()', we had to prefix the function ('kg_to_lbs()'), with
+                    the name of the object 'converters', using the 'dot' operator. On the second process, by importing a
+                    specific function from a 'module', we can easily call that function, without prefixing it, with the
+                    'module' name.</p>
+                <p>Let us see one final example. Suppose we want to find the maximum number in a list. For that we have to
+                    create a function called 'find_max()'. After, we put this functions in a separate 'module' called
+                    'utils.py' that will have latter a bunch of other utilities functions. Then, we will import the
+                    'utils.py' module, into the current 'module' and call the 'find_max()' function. Finally, we will get
+                    the result and print it out on the terminal. Where is how:</p>
+                <ul>
+                    <li>In the 'project panel' window of your project, right click above the 'Hello World' directory.</li>
+                    <li>Go to 'New' --&gt 'File' and select a name to that file, in this case, 'utils.py'.</li>
+                    <li>After creating this file, write the following code inside it:</li>
+                    <code id="code_li"><pre>
+            <em id="keyword">def</em> <em id="new-function">find_maximum</em>(numbers):
+                maximum = numbers[<em id="variable-value">0</em>]
+                <em id="keyword">for</em> number <em id="keyword">in</em> numbers:
+                    <em id="keyword">if</em> number &gt maximum:
+                    maximum = number
+                <em id="keyword">return</em> maximum</pre>
+            </code>
+                    <li>Now we need to import our 'utils.py' module, so we can access its functions:</li>
+                    <code id="code_li"><pre>
+            <em id="keyword">from</em> utils <em id="keyword">import</em> find_max
+            
+            numbers = [<em id="variable-value">10</em><em id="keyword">,</em> <em id="variable-value">3</em><em id="keyword">,</em> <em id="variable-value">6</em><em id="keyword">,</em> <em id="variable-value">2</em>]
+            maximum = find_maximum(numbers)
+            <em id="built-in-function">print</em>(maximum)</pre>
+            </code>
+                    <li>Note that in this code, first we need to inicialize, to define, our list, and only then, call the
+                        'find_maximum()' function. We pass that list as an argument to our 'find_maximum()' function, we get
+                        the result which is 'maximum' and finally print it on the terminal. As a result we will get '10'.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="packages">
+                <header>Packages</header>
+                <p>'Packages' in Python are another way to organize our code. 'Packages' are particularly useful, when we
+                    have hundreds or even thousands of modules (files). In these cases, we do not want to have all of those
+                    modules (files) inside our project, because if we did that our 'project panel' will bloated with so many
+                    files.</p>
+                <p>So a better approach is to organize related modules (files), inside of a 'package'. So a 'package' is a
+                    container for multiple modules (files). In a file system terms, a 'package' is a 'directory' or a
+                    'folder'.</p>
+                <p>So in our project, we can add a new 'directory' or 'folder', and in it we can add all the related
+                    modules. Lets us see how we can create a 'package' with some files in it:</p>
+                <ul>
+                    <li>In the 'project panel' window of our project, right click above the 'Hello World' directory.</li>
+                    <li>Go to 'New' --&gt 'Directory' and select a name to that file, in this case, 'ecommerce'. Inside it,
+                        we are going to have all the modules related to build an 'ecommerce application'. For example,
+                        'sales', 'shipping costs', 'customer service' and so on.</li>
+                    <li>After creating this empty 'directory', and in order to convert this 'directory' into a 'package', we
+                        need to add a special file in it. For that right click above 'ecommerce' directory, go to 'New'
+                        --&gt 'Python File' and call that file '__init__', this is a special convention in Python. So when
+                        Python interpreter sees a file with this name '__init__.py' in a directory, it treats this directory
+                        as a 'package'. We can simplify this process, by going to 'New' --&gt 'Python Package', and set the
+                        name to 'ecommerce', and has we can see PyCharm will automatically creates the '__init__.py', inside
+                        'ecommerce package'. Like this we do not need to create '__init__.py' manually.</li>
+                    <li>Inside the 'ecommerce package' create a new 'file', go to 'New' --&gt 'Python File' and call that
+                        file 'shipping.py'.</li>
+                    <li>Inside 'shipping.py' file, we want to create a function for calculating the shipping costs:</li>
+                    <code id="code_li"><pre>
+            <em id="keyword">def</em> <em id="new-function">calc_shipping_costs</em>(containers):
+                unit_cost = <em id="variable-value">2500</em>
+                insurance = <em id="variable-value">500</em>
+                packing = <em id="variable-value">500</em>
+                
+                shipping_costs = containers * unit_cost + insurance + packing
+                <em id="keyword">return</em> shipping_costs</pre>
+            </code>
+                </ul>
+                <p>Now our 'shipping.py' module is part of the 'ecommerce package', and we can not import it directly, we
+                    have to start from the 'ecommerce package'.</p>
+                <p>So in 'app.py' there are two ways to import this module. We can import the entire module, or we can
+                    import one of its functions or classes.</p>
+                <p>Using the first way, we use the 'dot' notation to import the entire module and we have to prefix the
+                    function with the name of the 'package' ('ecommerce.shipping'). Then to access any of the classes or
+                    functions in this module, we have to type the name of the package 'ecommerce' (directory), plus
+                    'shipping' (file), plus the name of the function ('shipping_costs') and then indicate the number of
+                    containers ('10'). With this approach, every time we want to access a function inside this module, we
+                    have to prefix it with 'ecommerce.shipping'. Here is the code:</p>
+                <code><pre>
+            <em id="keyword">import</em> ecommerce.shipping
+            
+            ecommerce.shipping.calc_shipping(<em id="variable-value">10</em>)</pre>
+        </code>
+                <p>The usual approach when working with 'packages', is the second approach, using the 'from / import'
+                    statement. With this, we do not need to prefix functions with 'ecommerce.shipping' and we can access
+                    then, just by writing their name. Like this, our code gets a little shorter, easier to read and
+                    understand, and easier to maintain:</p>
+                <code><pre>
+            <em id="keyword">from</em> ecommerce.shipping <em id="keyword">import</em> calc_shipping
+            
+            calc_shipping(<em id="variable-value">10</em>)</pre>
+        </code>
+                <p>If we want to import multiple functions from 'ecommerce.shipping', we have also two ways. In the first
+                    way we write on the top of our code, all the functions we want to import:</p>
+                <code><pre>
+            <em id="keyword">from</em> ecommerce.shipping <em id="keyword">import</em> calc_shipping
+            <em id="keyword">from</em> ecommerce.shipping <em id="keyword">import</em> calc_tax
+            
+            calc_shipping(<em id="variable-value">10</em>)</pre>
+        </code>
+                <p>And in the second way, we import the entire module, and then access all the functions or classes in that
+                    module. In other words, from the 'ecommerce package' we import 'shipping module'. With this, 'shipping'
+                    module becomes an object of our current file, so we can access all the functions and classes defined in
+                    that object, using the 'dot' operator:</p>
+                <code><pre>
+            <em id="keyword">from</em> ecommerce <em id="keyword">import</em> shipping
+            
+            shipping.calc_shipping(<em id="variable-value">10</em>)</pre>
+        </code>
+                <p>In resume:</p>
+                <ul>
+                    <li>When using the 'from' statement, we can either start from the 'package' (in this case 'ecommerce')
+                        and import a specific module ('shipping'), or we can start from package.module
+                        ('ecommerce.shipping') and then import a specific function ('calc_shipping').</li>
+                    <li>'Packages' in Python are another way to organize our code. 'Packages' are particularly useful, to
+                        deal with a large number of modules (files).</li>
+                    <li>'Packages' are important if we want to work with a framework like 'Django', that is used to build
+                        web applications with Python. In 'Django', we have several 'packages', and each 'package' contains
+                        several modules.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="standard_libraries_for_Python">
+                <header>Standard libraries for Python</header>
+                <p>Python comes with a standard library that contains several modules for common tasks, such as sending
+                    emails, working with date and time, generating random values and passwords and so on.</p>
+                <p>Depending on the version of Python that we use, Python 2 or Python 3, we should use different version of
+                    the library, because librarys modules in Python 2 are different from librarys modules in Python 3.</p>
+                <p>For Python 3, we can find this standad library at <a class="external-link"
+                        href="https://docs.python.org/3/py-modindex.html" target="_blank">Python 3 Library</a>. Here we will
+                    find all the modules built-in Python.</p>
+                <p>To use the built-in modules, we do not need to have a file with a specific name, has we saw with
+                    packages. This happens, because we are importing built-in modules, and for those, Python interpreter
+                    knows that they are built-in it and where to find them.</p>
+                <p>If we want to know where these built-in modules are stored, we go to the 'project panel', and inside our
+                    folder project ('Hello World') --&gt 'External Libraries' --&gt '&lt Python3.9 (HelloWorld)' --&gt
+                    'python3.9 library root' and inside this folder we can find all the built-in modules. We can also open
+                    them, to see the source code of a specific module. Let us see an example:</p>
+                <code><pre>
+            <em id="keyword">import</em> random
+            
+            <em id="keyword">for</em> i <em id="keyword">in</em> <em id="built-in-function">range</em>(<em id="variable-value">3</em>):
+                <em id="built-in-function">print</em>(random.randint(<em id="variable-value">10</em><em id="keyword">,</em> <em id="variable-value">20</em>))</pre>
+        </code>
+                <p>In this code, first we import the 'random' module. Remember that because we are importing a built-in
+                    module, we do not need to have a file named 'random.py'. Python interpreter knows where to find this
+                    module.</p>
+                <p>When we import the 'random' module, now we have this object 'random', and we can use the 'dot' operator
+                    to access its methods. In our case, we called the 'randint' method ('random.randint'). This method
+                    generates a random value between '10' and '20'.</p>
+                <p>By using the 'range()' function, combined with a 'for loop', and the 'random' method, we are telling the
+                    program to 'loop' through this 'range' object, and in each iteration, this object will spit out a value.
+                    With our 'for loop', we can execute this loop 3 times, because 'range()' function was set to '3'.</p>
+                <p>Lets us see another example. Imagen we have a list of team members and we want to randomly pick someone
+                    as the leader:</p>
+                <code><pre>
+            <em id="keyword">import</em> random
+            
+            members = [<em id="argument">'John'</em><em id="keyword">,</em> <em id="argument">'Mary'</em><em id="keyword">,</em> <em id="argument">'Bob'</em><em id="keyword">,</em> <em id="argument">'Paulo'</em>]
+            leader = random.choise(members)
+            <em id="built-in-function">print</em>(leader)</pre>
+        </code>
+                <p>Once again, first we impor the built-in function 'random', then we define a list of members ('members').
+                    Afer we call the 'random' function, we select the 'choise' method and we pass to it our 'members' list.
+                </p>
+                <p>Now, this method will randomly pick a member from the list and return it, so we can store the result in
+                    the variable called 'leader' and print it on the terminal.</p>
+                <p>Here is one more example. Let us suppose we have roll a dice. Every time we run this program, we get a
+                    different value.</p>
+                <p>For this we define a class called 'Dice', and inside it we will have a method called 'roll()'. So every
+                    time we call this method, we get a tuple. Remember that a tuple is a list of values that can not be
+                    changed (add new items, remove items and so on), it is like a read only list. So, every time we call the
+                    method 'roll()', we will get a tuple of two random values. Here is how:</p>
+                <code><pre>
+            <em id="keyword">import</em> random
+            
+            
+            <em id="keyword">class</em> Dice:
+                <em id="keyword">def</em> <em id="new-function">roll</em>(<em id="self-operator">self</em>):
+                    first = random.randint(<em id="variable-value">1</em><em id="keyword">,</em> <em id="variable-value">6</em>)
+                    second = random.randint(<em id="variable-value">1</em><em id="keyword">,</em> <em id="variable-value">6</em>)
+                    <em id="keyword">return</em> first<em id="keyword">,</em> second
+            
+            
+            dice = Dice()
+            <em id="variable-value">print</em>(dice.roll)</pre>
+        </code>
+                <p>In the example above, and after creating the class, we create an object 'dice' of type 'Dice()', and then
+                    we roll the dice ('dice.roll') and print the result on the terminal.</p>
+                <p>Note that:</p>
+                <ul>
+                    <li>Because we want to return a tuple from a function, Python does not need parentheses on the return
+                        statement ('return (first, second)'), we can simply write 'return first, second'.</li>
+                    <li>In 'PEP8' document, that establishes the <a class="external-link"
+                            href="https://www.python.org/dev/peps/pep-0008/" target="_blanck">'Style Guide for Python
+                            Code'</a>, so we can write proper code, it states that between importing a module ('import
+                        random') and the class ('Dice(self)'), and between the class and the object ('dice'), we should have
+                        two line breaks in our code.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="directories_and_files">
+                <header>Directories and Files</header>
+                <p>To work with 'Directories and Files' in Python 3, we can see in <a class="external-link"
+                        href="https://docs.python.org/3/py-modindex.html" target="_blanck">Python Module Index</a>, a module
+                    called 'pathlib', which provides an 'object-oriented filesystem paths'. That basically means it provides
+                    classes, that we can use to create objects to work with different directories and files.</p>
+                <p>If we check <a class="external-link" href="https://docs.python.org/3/library/pathlib.html#module-pathlib"
+                        target="_blanck">'pathlib' module</a>, we can see how this module works and all kind of examples.
+                    Let us import this 'pathlib' module and use some of their classes and methods:</p>
+                <code><pre>
+            <em id="keyword">from</em> pathlib <em id="keyword">import</em> Path
+            
+            path = Path(<em id="argument">'ecommerce'</em>)
+            for file in path.glob(<em id="argument">'*.py'</em>):
+                <em id="built-in-function">print</em>(file)</pre>
+        </code>
+                <p>In the example above, from the 'pathlib' module, we import the 'Path' class. After we create a 'Path()'
+                    object that reference to a file or directory on our computer, and for that we have two ways to do it, an
+                    'absolute path' or a 'relative path'. In this case we used a 'relative path', so we created a
+                    'Path('ecommerce')' object. After, we store the result in a variable called 'path'.</p>
+                <p>Now, the 'path' object as several methods that we can access, using the 'dot' notation, and by using the
+                    'glob()' method and the 'for' method combined, we are telling Python to iterate over all the files in a
+                    given path, in this case 'path.glob('*.py')'. As a result, we will obtain all the '.py' files in the
+                    current directory.</p>
+                <p>Note that:</p>
+                <ul>
+                    <li>If we did not had pass an argument, a string, in this case 'ecommerce', with a file or a directory,
+                        to the 'Path()' object, this object would be refering to the current directory.</li>
+                    <li>With an 'absolute path', we start from the root of our disk. For example, on Windows we might have
+                        an absolute path like 'c:\Program Files\Microsoft\...', in this case 'Program Files' and 'Microsoft'
+                        are directories in 'c drive' (on Windows we use a backslash '\' to built a path and on Mac, the path
+                        would look like this '/usr/local/bin').</li>
+                    <li>With a 'relative path' we start from the current directory, in our case 'ecommerce', and then go
+                        somewhere else.</li>
+                </ul>
+                <p>Here are some useful methods contained in the 'path' object:</p>
+                <ul>
+                    <li>'.exists()': allow to check if a path exists. It returns a boolean value ('True' or 'False').</li>
+                    <li>'.mkdir()': make directory. Create a new directory. Beyound creating a directory, this method will
+                        return 'None' on the terminal.</li>
+                    <li>'.rmdir()': remove directory. Delete an existing directory. Beyound deleting a directory, this
+                        method will return 'None' on the terminal.</li>
+                    <li>'.glob()': returns all the files and directories on the current or a given path. Looks in the
+                        current path, if we do not provide any argument, any path. This method takes two arguments, the
+                        first is a string that defines a search pattern:
+                        <ul>
+                            <li>'*': all files and all directories.</li>
+                            <li>'*.*': all the files on a the current directory, but not all the directories.</li>
+                            <li>'*.py': all Python files in the current directory.</li>
+                            <li>'*.xls': all EXCEL files in the current directory.</li>
+                            <li>Very useful to write programs to automate something. For example we can iterate over all the
+                                spreadsheets in a directory, and open them and process them.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="pypi_and_pip">
+                <header>Pypi and Pip</header>
+                <p>'Pypi' stands for 'Python Package Index', and is a complement to the standard Python library. In <a
+                        class="external-link" href="https://pypi.org/" target="_blanck">Pypi</a> we can find all kind of
+                    packages, to do all kind of things. These packages were built by developers, as part of their projects,
+                    and then they have published it where for other people to use.</p>
+                <p>Let us suppose we want to build a program to send text messages. We do not need to built this
+                    functionality from scratch. If we search in <a class="external-link" href="https://pypi.org/"
+                        target="_blanck">Pypi</a> for 'SMS', we will see several projects or packages, that give us that
+                    functionality.</p>
+                <p>Note that, not every project or package is completed or bug free, some of them are still in development
+                    or they have bugs. But with a good search is very likely that we can find a reliable and well documented
+                    package for the cases we need.</p>
+                <p>Now let us see how can we import a package from <a class="external-link" href="https://pypi.org/"
+                        target="_blanck">Pypi</a>. To better unsderstand the next examples we should check <a
+                        class="external-link" href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" target="_blanck">Python for
+                        Beginners from Mosh</a>:</p>
+                <code><pre>
+            <em id="keyword">import</em> openpyxl <em id="keyword">as</em> xl
+            
+            
+            wb = xl.load_workbook(<em id="argument">'transation.xlsx'</em>)
+            sheet = wb[<em id="argument">'Sheet1'</em>]
+            cell = sheet.cell(<em id="variable-value">1</em><em id="keyword">,</em> <em id="variable-value">1</em>)
+            
+            <em id="keyword">for</em> row <em id="keyword">in</em> <em id="built-in-function">range</em>(<em id="variable-value">2</em><em id="keyword">,</em> sheet_max_row + <em id="variable-value">1</em>):
+                cell = sheet.cell(row, <em id="variable-value">3</em>)
+                corrected_price = cell.value * <em id="variable-value">0.9</em>
+                corrected_price_cell = sheet.cell(row, <em id="variable-value">4</em>)
+                corrected_price_cell.value = corrected_price
+            
+            wb.save(<em id="argument">'transation2.xlsx'</em>)</pre>
+        </code>
+                <p>In the example above, we went to <a class="external-link" href="https://pypi.org/"
+                        target="_blanck">Pypi</a> and we searched for <a class="external-link"
+                        href="https://pypi.org/project/openpyxl/" target="_blanck">openpyxl 3.0.9</a>. This is a package
+                    that we use to work with EXCEL spreadsheets.</p>
+                <p>After, on Pycharm terminal, we typed 'pip install openpyxl' and press 'enter', in order to install the
+                    'openpyxl' package. 'pip' is the tool that comes with Python instalation and that we use it to install
+                    or unistall packages registered on <a class="external-link" href="https://pypi.org/"
+                        target="_blanck">Pypi</a>.</p>
+                <p>Now, we can import this package and its modules, just like in a built-in module in Python, or the modules
+                    that we have in our project. For that we use 'import openpyxl'.</p>
+                <p>If we want to see where this package was stored, we should go to the 'project panel' --&gt 'External
+                    Libraries' --&gt '&lt Python3.9 (HelloWorld)...' --&gt 'site-packages library root'. This is were all
+                    the packages we install with 'pip' are stored. If we go forder we will find '__init__.py' file ( --&gt
+                    'openpyxl' --&gt 'cell' --&gt '__init__.py').</p>
+                <p>Remember that whenever we have a '__init__.py' file, Python treats that folder as a package. So 'cell' is
+                    a package, and inside it we have several modules. To recap, 'openpyxl' is a package, has several
+                    sub-packages 'cell', 'chart', 'chartsheet' and so on, and in each sub-package it has several modules.
+                </p>
+                <p>After we put our xl file inside our project file folder ('HelloWorld'), we import our 'openpyxl' package
+                    'import openpyxl' and give it an alias to make our code shorter 'as xl' (it is not required to define an
+                    alias, but make our code shorter). Now we can access all sub-packages and methods inside 'openpyxl' just
+                    by typing 'xl.', in this case we use '.load_workbook' to load our xl workbook and in the argument we
+                    pass the name of that file 'transactions.xlx', that we can store in an 'wb' ('workbook object').</p>
+                <p>In our example, we have only one spredsheet inside our xl workbook, and to access it, we specify the name
+                    of the sheet ('wb['Sheet1']'). We have to speal the sheet name properly, in this case starting with a
+                    capital letter, otherwise we will obtain an error. After we can store that 'xl sheet' on a 'sheet'
+                    object ('sheet = wb['Sheet1']').</p>
+                <p>Now, it is possible to give a coordinate of a cell (combination between a column and a row) and store it
+                    on a 'cell' object ('cell = sheet['a1']'). Another method to obtain 'a1' value, could be 'sheet.cell(1,
+                    1)' were the first '1' represents the row, and the second the column.</p>
+                <p>So, now we need to iterate over the value on column three ('price') and multiple it by '0.9'. Because we
+                    have four rows in our EXCEL file, and the first row represents the header, we need to iterate between
+                    rows '2' to '4'. For that we use the 'range' function ('range(2, sheet.max.row + 1)'). 'sheet.max.row'
+                    give the number of total rows in our xl spreadsheet plus one ('+ 1'). We have to add '1', because the
+                    range function returns the values between 1 and 'sheet.max.row + 1', but it will not include this last
+                    value, in this case 'sheet.max.row + 1'.</p>
+                <p>Now, by using 'sheet.cell(row, 3)', we are telling Python to return the values in our spreadsheet that
+                    are in: rows '2' to '4' ('4' is excluded) and in column '3' ('price'). Now, we can multiple these values
+                    by '0.9', and store the value in a variable called 'corrected_price' ('corrected_price = cell.value *
+                    0.9').</p>
+                <p>After, we add a new column to our spreadsheet (in this case '4'), with the corrected values
+                    ('sheet.cell(row, 4)'), we store those values in a new variable called 'corrected_price_cell', and set
+                    the values to the cell 'corrected_price_cell.value = corrected_price'.</p>
+                <p>On the end, we save the changes in a new xl workbook, and for that we type
+                    'wb.save('transactions2.xlsx')', in this case the argument 'transactions2.xlsx' is the name of the new
+                    file.</p>
+                <p>Now, if we run our program, we will see a new xl file with the name 'transactions2.xlsx' and with all the
+                    changes on it. We will also see on the terminal a message saying 'Process finished with exit code 0'.
+                </p>
+                <p>Let us supose we would also like to add a chart. For that, we could make this changes in our code:</p>
+                <code><pre>
+            <em id="keyword">import</em> openpyxl <em id="keyword">as</em> xl
+            <em id="keyword">from</em> openpyxl.chart <em id="keyword">import</em> BarChart<em id="keyword">,</em> Reference
+            
+            wb = xl.load_workbook(<em id="variable-value">'transation.xlsx'</em>)
+            sheet = wb[<em id="variable-value">'Sheet1'</em>]
+            cell = sheet[<em id="variable-value">'a1'</em>]
+            cell = sheet.cell(<em id="variable-value">1</em><em id="keyword">,</em> <em id="variable-value">1</em>)
+            
+            <em id="keyword">for</em> row <em id="keyword">in</em> <em id="built-in-function">range</em>(<em id="variable-value">2</em><em id="keyword">,</em> sheet_max_row + <em id="variable-value">1</em>):
+                cell = sheet.cell(row, <em id="variable-value">3</em>)
+                corrected_price = cell.value * <em id="variable-value">0.9</em>
+                corrected_price_cell = sheet.cell(row, <em id="variable-value">4</em>)
+                corrected_price_cell.value = corrected_price
+            
+            
+            values_chart = Reference(sheet<em id="keyword">,</em>
+                                    <em id="key-argument">min_row</em>=<em id="variable-value">2</em><em id="keyword">,</em>
+                                    <em id="key-argument">max_row</em>=sheet.max_row<em id="keyword">,</em>
+                                    <em id="key-argument">min_col</em>=<em id="variable-value">4</em><em id="keyword">,</em>
+                                    <em id="key-argument">max_col</em>=<em id="variable-value">4</em>)
+            
+            chart = BarChart()
+            chart.add_data(values)
+            sheet.add_chart(chart<em id="keyword">,</em> <em id="argument">'e2'</em>)
+            
+            wb.save(<em id="argument">'transation2.xlsx'</em>)</pre>
+        </code>
+                <p>In this code, we added 'from openpyxl.chart import BarChart, Reference'. Let us see what is going on
+                    here. In the package 'openpyxl', we have a module called 'chart', and from this module we are importing
+                    two classes: 'BarChart' and 'Reference'. Now that we have these two classes, we added a chart.</p>
+                <p>First, we need to select a range of values, in this case the values of the four column, using the
+                    'Reference' class. In this class we need to pass two arguments, the first is the 'sheet', then we add
+                    four keyword arguments: 'min_row=2' and 'max_row=sheet.max_row' (allow us to select the cells on row '2'
+                    to '4'), and, 'min_col=4' and 'max_col=4' (only select the values of column '4'). On the end, we store
+                    this result in a variable called 'values_chart'.</p>
+                <p>After, we need to create a chart. For that, we create an instance of the 'BarChart()' class and store it
+                    on the 'chart' object. Next we call 'chart.add.data()' and pass the 'values' arguments.</p>
+                <p>Finally, we need to add the chart to our sheet, so we call 'sheet.add_chart()', pass the '(chart)'
+                    object, and tell were we want the chart to be ('e2'), this is the inicial cell were our chart will be
+                    placed.</p>
+                <p>Note that our code is 'dirty', so lets improve it:</p>
+                <code><pre>
+            <em id="keyword">import</em> openpyxl <em id="keyword">as</em> xl
+            <em id="keyword">from</em> openpyxl.chart <em id="keyword">import</em> BarChart<em id="keyword">,</em> Reference
+            
+            
+            <em id="keyword">def</em> <em id="new-function">process_workbook</em>(filename):
+                wb = xl.load_workbook(filename)
+                sheet = wb[<em id="argument">'Sheet1'</em>]
+    
+                <em id="keyword">for</em> row <em id="keyword">in</em> <em id="built-in-function">range</em>(<em id="variable-value">2</em><em id="keyword">,</em> sheet_max_row + <em id="variable-value">1</em>):
+                    cell = sheet.cell(row, <em id="variable-value">3</em>)
+                    corrected_price = cell.value * <em id="variable-value">0.9</em>
+                    corrected_price_cell = sheet.cell(row, <em id="variable-value">4</em>)
+                    corrected_price_cell.value = corrected_price
+            
+            
+                values_chart = Reference(sheet<em id="keyword">,</em>
+                                        <em id="key-argument">min_row</em>=<em id="variable-value">2</em><em id="keyword">,</em>
+                                        <em id="key-argument">max_row</em>=sheet.max_row<em id="keyword">,</em>
+                                        <em id="key-argument">min_col</em>=<em id="variable-value">4</em><em id="keyword">,</em>
+                                        <em id="key-argument">max_col</em>=<em id="variable-value">4</em>)
+            
+                chart = BarChart()
+                chart.add_data(values)
+                sheet.add_chart(chart<em id="keyword">,</em> <em id="argument">'e2'</em>)
+            
+                <em id="keyword">wb.save</em>(filename)</pre>
+        </code>
+                <p>In the code above, note that 'filename' represents every name, of every file, overwritng the existent
+                    files, so we can run this program, for every files.</p>
+            </section>
+            <section class="main-section" id="reference">
+                <header>Reference</header>
+                <p>All the documentation in this page was taken from
+                    <a class="external-link" href="https://www.python.org/" target="_blank">Python Org</a>,
+                    <a class="external-link" href="https://codewithmosh.com/" target="_blank">Code With Mosh</a>,
+                    <a class="external-link" href="https://www.python-course.eu/python3_execute_script.php"
+                        target="_blank">Python Course EU</a> &
+                    <a class="external-link" href="https://techvidvan.com/tutorials/python-tutorial/"
+                        target="_blank">TechVidvan</a> and it is only use with an academic purpose.
+                </p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <nav id="navbar-footer">
+                <ul>
+                    <!--
+            .'privacy', 'terms', 'contacts' are empty links
+            . links provide, does NOT link to any pages
+            -->
+                    <li><a class="nav-link" href="#privacy">Privacy</a></li>
+                    <li><a class="nav-link" href="#terms">Terms</a></li>
+                    <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <p id="copyright-notes">All the content in this page, belongs to the original owners. Information is only being
+                used for academic purposes.</p>
+        </footer>
+    </div>
+</body>
+</html>
